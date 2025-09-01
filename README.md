@@ -13,3 +13,4 @@ Notes for dataset:
 product_relations.csv is from Matthew (for reference only)
 ProductAttributeScores.csv is the generated data form Attribute.ipyb
 ProductTransactionScores.csv is the generated data from Transaction.ipyb
+
