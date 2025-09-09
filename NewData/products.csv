@@ -1,331 +1,201 @@
-product_id,product_name,category,brand,grade,material,compatible_vehicle_types,compatible_vehicle_names,unit_price
-PROD00001,Tires Rubber Economy 1,Tires,Mobal1,Economy,Rubber,Hatchback,"Mazda 2, Honda Jazz",125.46
-PROD00002,Tires Rubber Economy 2,Tires,Enasava,Economy,Rubber,Crossover,Toyota C-HR,148.36
-PROD00003,Tires Rubber Economy 3,Tires,Mobal1,Economy,Rubber,SUV,"Daihatsu Terios, Mitsubishi Pajero",161.1
-PROD00004,Tires Rubber Economy 4,Tires,Torida,Economy,Rubber,Sedan,"Nissan Teana, Honda Accord",36.47
-PROD00005,Tires Rubber Economy 5,Tires,Torida,Economy,Rubber,Hatchback,"Suzuki Swift, Toyota Yaris",43.85
-PROD00006,Tires Rubber Economy 6,Tires,SuperCharge,Economy,Rubber,Sedan,"Mazda 6, Nissan Teana",112.24
-PROD00007,Tires Rubber Economy 7,Tires,Geyestone,Economy,Rubber,SUV,Toyota Rush,119.76
-PROD00008,Tires Rubber Economy 8,Tires,Geyestone,Economy,Rubber,MPV,"Mitsubishi Xpander, Toyota Avanza",94.49
-PROD00009,Tires Rubber Economy 9,Tires,Mobal1,Economy,Rubber,SUV,Daihatsu Terios,88.53
-PROD00010,Tires Rubber Economy 10,Tires,Batcliff,Economy,Rubber,Sedan,"Nissan Teana, Honda Accord",46.27
-PROD00011,Tires Rubber Standard 11,Tires,Geyestone,Standard,Rubber,Sedan,"Nissan Teana, Honda Accord",107.16
-PROD00012,Tires Rubber Standard 12,Tires,Mobal1,Standard,Rubber,SUV,"Honda CR-V, Toyota Rush",132.51
-PROD00013,Tires Rubber Standard 13,Tires,Torida,Standard,Rubber,MPV,Mitsubishi Xpander,44.39
-PROD00014,Tires Rubber Standard 14,Tires,Batcliff,Standard,Rubber,SUV,"Honda CR-V, Mitsubishi Pajero",164.73
-PROD00015,Tires Rubber Standard 15,Tires,Mobal1,Standard,Rubber,Hatchback,"Suzuki Swift, Toyota Yaris",195.36
-PROD00016,Tires Rubber Standard 16,Tires,Mobal1,Standard,Rubber,Sedan,"Nissan Teana, Mazda 6",56.15
-PROD00017,Tires Rubber Standard 17,Tires,Geyestone,Standard,Rubber,Hatchback,Mazda 2,72.46
-PROD00018,Tires Rubber Standard 18,Tires,Batcliff,Standard,Rubber,Crossover,Toyota C-HR,70.45
-PROD00019,Tires Rubber Standard 19,Tires,Enasava,Standard,Rubber,Crossover,"Nissan Juke, Toyota C-HR",126.6
-PROD00020,Tires Rubber Standard 20,Tires,Mobal1,Standard,Rubber,MPV,Toyota Avanza,103.09
-PROD00021,Tires Rubber Premium 21,Tires,Torida,Premium,Rubber,Sedan,"Nissan Teana, Mazda 6",167.41
-PROD00022,Tires Rubber Premium 22,Tires,Geyestone,Premium,Rubber,Crossover,"Honda HR-V, Toyota C-HR",63.56
-PROD00023,Tires Rubber Premium 23,Tires,Batcliff,Premium,Rubber,Sedan,"Mazda 6, Toyota Camry",198.33
-PROD00024,Tires Rubber Premium 24,Tires,Torida,Premium,Rubber,Crossover,"Mazda CX-3, Toyota C-HR",162.33
-PROD00025,Tires Rubber Premium 25,Tires,Enasava,Premium,Rubber,Hatchback,Honda Jazz,138.37
-PROD00026,Tires Rubber Premium 26,Tires,SuperCharge,Premium,Rubber,Hatchback,Honda Jazz,197.05
-PROD00027,Tires Rubber Premium 27,Tires,Torida,Premium,Rubber,Crossover,"Mazda CX-3, Nissan Juke",37.75
-PROD00028,Tires Rubber Premium 28,Tires,Geyestone,Premium,Rubber,Sedan,Mazda 6,90.4
-PROD00029,Tires Rubber Premium 29,Tires,Torida,Premium,Rubber,MPV,Daihatsu Xenia,106.9
-PROD00030,Tires Rubber Premium 30,Tires,Mobal1,Premium,Rubber,Hatchback,"Honda Jazz, Mazda 2",45.5
-PROD00031,Batteries Lithium Economy 31,Batteries,SuperCharge,Economy,Lithium,Hatchback,"Mazda 2, Honda Jazz",106.93
-PROD00032,Batteries Lithium Economy 32,Batteries,Mobal1,Economy,Lithium,Crossover,Mazda CX-3,145.42
-PROD00033,Batteries Lithium Economy 33,Batteries,Torida,Economy,Lithium,Hatchback,Suzuki Swift,165.83
-PROD00034,Batteries Lithium Economy 34,Batteries,Mobal1,Economy,Lithium,SUV,Honda CR-V,39.69
-PROD00035,Batteries Lithium Economy 35,Batteries,SuperCharge,Economy,Lithium,Sedan,Honda Accord,48.82
-PROD00036,Batteries Lithium Economy 36,Batteries,Batcliff,Economy,Lithium,MPV,"Mitsubishi Xpander, Toyota Avanza",133.36
-PROD00037,Batteries Lithium Economy 37,Batteries,Mobal1,Economy,Lithium,Sedan,"Mazda 6, Toyota Camry",130.54
-PROD00038,Batteries Lithium Economy 38,Batteries,Torida,Economy,Lithium,Sedan,"Mazda 6, Honda Accord",146.85
-PROD00039,Batteries Lithium Economy 39,Batteries,Torida,Economy,Lithium,Sedan,"Toyota Camry, Nissan Teana",163.91
-PROD00040,Batteries Lithium Economy 40,Batteries,Geyestone,Economy,Lithium,MPV,Daihatsu Xenia,55.47
-PROD00041,Batteries Lead Acid Economy 41,Batteries,Mobal1,Economy,Lead Acid,SUV,"Mitsubishi Pajero, Honda CR-V",76.41
-PROD00042,Batteries Lead Acid Economy 42,Batteries,Geyestone,Economy,Lead Acid,Crossover,"Nissan Juke, Honda HR-V",172.19
-PROD00043,Batteries Lead Acid Economy 43,Batteries,SuperCharge,Economy,Lead Acid,MPV,Daihatsu Xenia,126.23
-PROD00044,Batteries Lead Acid Economy 44,Batteries,Geyestone,Economy,Lead Acid,Sedan,"Toyota Camry, Mazda 6",41.05
-PROD00045,Batteries Lead Acid Economy 45,Batteries,Batcliff,Economy,Lead Acid,Hatchback,Mazda 2,127.36
-PROD00046,Batteries Lead Acid Economy 46,Batteries,Batcliff,Economy,Lead Acid,MPV,"Mitsubishi Xpander, Toyota Avanza",134.39
-PROD00047,Batteries Lead Acid Economy 47,Batteries,Geyestone,Economy,Lead Acid,Sedan,Mazda 6,45.25
-PROD00048,Batteries Lead Acid Economy 48,Batteries,Torida,Economy,Lead Acid,Hatchback,"Honda Jazz, Toyota Yaris",107.23
-PROD00049,Batteries Lead Acid Economy 49,Batteries,Mobal1,Economy,Lead Acid,Sedan,"Mazda 6, Honda Accord",108.51
-PROD00050,Batteries Lead Acid Economy 50,Batteries,SuperCharge,Economy,Lead Acid,Crossover,"Honda HR-V, Nissan Juke",25.55
-PROD00051,Batteries Lithium Standard 51,Batteries,Enasava,Standard,Lithium,Sedan,"Toyota Camry, Honda Accord",116.77
-PROD00052,Batteries Lithium Standard 52,Batteries,SuperCharge,Standard,Lithium,Sedan,"Mazda 6, Nissan Teana",40.38
-PROD00053,Batteries Lithium Standard 53,Batteries,Torida,Standard,Lithium,SUV,"Honda CR-V, Mitsubishi Pajero",156.8
-PROD00054,Batteries Lithium Standard 54,Batteries,Torida,Standard,Lithium,Crossover,Mazda CX-3,152.48
-PROD00055,Batteries Lithium Standard 55,Batteries,Geyestone,Standard,Lithium,Sedan,"Toyota Camry, Honda Accord",82.74
-PROD00056,Batteries Lithium Standard 56,Batteries,Enasava,Standard,Lithium,SUV,"Toyota Rush, Mitsubishi Pajero",165.93
-PROD00057,Batteries Lithium Standard 57,Batteries,SuperCharge,Standard,Lithium,MPV,"Mitsubishi Xpander, Toyota Avanza",45.06
-PROD00058,Batteries Lithium Standard 58,Batteries,SuperCharge,Standard,Lithium,Sedan,Toyota Camry,83.15
-PROD00059,Batteries Lithium Standard 59,Batteries,Mobal1,Standard,Lithium,Hatchback,Suzuki Swift,72.67
-PROD00060,Batteries Lithium Standard 60,Batteries,Batcliff,Standard,Lithium,MPV,"Toyota Avanza, Mitsubishi Xpander",185.38
-PROD00061,Batteries Lead Acid Standard 61,Batteries,Enasava,Standard,Lead Acid,Hatchback,Toyota Yaris,46.32
-PROD00062,Batteries Lead Acid Standard 62,Batteries,Batcliff,Standard,Lead Acid,Hatchback,Mazda 2,45.59
-PROD00063,Batteries Lead Acid Standard 63,Batteries,Torida,Standard,Lead Acid,Hatchback,"Mazda 2, Toyota Yaris",134.05
-PROD00064,Batteries Lead Acid Standard 64,Batteries,Geyestone,Standard,Lead Acid,SUV,"Honda CR-V, Mitsubishi Pajero",101.85
-PROD00065,Batteries Lead Acid Standard 65,Batteries,Torida,Standard,Lead Acid,Crossover,"Nissan Juke, Toyota C-HR",151.57
-PROD00066,Batteries Lead Acid Standard 66,Batteries,Batcliff,Standard,Lead Acid,Crossover,"Nissan Juke, Toyota C-HR",59.21
-PROD00067,Batteries Lead Acid Standard 67,Batteries,Geyestone,Standard,Lead Acid,Crossover,Mazda CX-3,78.12
-PROD00068,Batteries Lead Acid Standard 68,Batteries,Batcliff,Standard,Lead Acid,Hatchback,"Toyota Yaris, Suzuki Swift",161.89
-PROD00069,Batteries Lead Acid Standard 69,Batteries,Mobal1,Standard,Lead Acid,SUV,Toyota Rush,161.1
-PROD00070,Batteries Lead Acid Standard 70,Batteries,Enasava,Standard,Lead Acid,Crossover,Nissan Juke,99.43
-PROD00071,Batteries Lithium Premium 71,Batteries,Enasava,Premium,Lithium,SUV,"Daihatsu Terios, Honda CR-V",178.79
-PROD00072,Batteries Lithium Premium 72,Batteries,Torida,Premium,Lithium,Hatchback,Suzuki Swift,137.83
-PROD00073,Batteries Lithium Premium 73,Batteries,Mobal1,Premium,Lithium,Hatchback,Suzuki Swift,182.68
-PROD00074,Batteries Lithium Premium 74,Batteries,Mobal1,Premium,Lithium,Sedan,Mazda 6,74.99
-PROD00075,Batteries Lithium Premium 75,Batteries,Torida,Premium,Lithium,Sedan,"Toyota Camry, Nissan Teana",20.2
-PROD00076,Batteries Lithium Premium 76,Batteries,SuperCharge,Premium,Lithium,Crossover,Honda HR-V,60.71
-PROD00077,Batteries Lithium Premium 77,Batteries,Mobal1,Premium,Lithium,Crossover,Nissan Juke,81.84
-PROD00078,Batteries Lithium Premium 78,Batteries,Torida,Premium,Lithium,SUV,"Daihatsu Terios, Mitsubishi Pajero",61.21
-PROD00079,Batteries Lithium Premium 79,Batteries,Geyestone,Premium,Lithium,SUV,Toyota Rush,86.16
-PROD00080,Batteries Lithium Premium 80,Batteries,Enasava,Premium,Lithium,Hatchback,Mazda 2,135.48
-PROD00081,Batteries Lead Acid Premium 81,Batteries,SuperCharge,Premium,Lead Acid,Sedan,Toyota Camry,137.0
-PROD00082,Batteries Lead Acid Premium 82,Batteries,Mobal1,Premium,Lead Acid,Crossover,"Honda HR-V, Toyota C-HR",47.25
-PROD00083,Batteries Lead Acid Premium 83,Batteries,Torida,Premium,Lead Acid,Crossover,"Honda HR-V, Nissan Juke",45.2
-PROD00084,Batteries Lead Acid Premium 84,Batteries,Geyestone,Premium,Lead Acid,SUV,"Honda CR-V, Daihatsu Terios",162.39
-PROD00085,Batteries Lead Acid Premium 85,Batteries,SuperCharge,Premium,Lead Acid,Sedan,"Toyota Camry, Mazda 6",128.18
-PROD00086,Batteries Lead Acid Premium 86,Batteries,Geyestone,Premium,Lead Acid,MPV,"Toyota Avanza, Daihatsu Xenia",56.98
-PROD00087,Batteries Lead Acid Premium 87,Batteries,Geyestone,Premium,Lead Acid,MPV,Mitsubishi Xpander,136.31
-PROD00088,Batteries Lead Acid Premium 88,Batteries,Enasava,Premium,Lead Acid,Sedan,"Mazda 6, Toyota Camry",109.92
-PROD00089,Batteries Lead Acid Premium 89,Batteries,Geyestone,Premium,Lead Acid,MPV,Toyota Avanza,188.11
-PROD00090,Batteries Lead Acid Premium 90,Batteries,SuperCharge,Premium,Lead Acid,Sedan,"Mazda 6, Honda Accord",142.93
-PROD00091,Oil Synthetic Economy 91,Oil,SuperCharge,Economy,Synthetic,Crossover,Nissan Juke,32.16
-PROD00092,Oil Synthetic Economy 92,Oil,Torida,Economy,Synthetic,Hatchback,Honda Jazz,190.76
-PROD00093,Oil Synthetic Economy 93,Oil,Mobal1,Economy,Synthetic,Crossover,"Mazda CX-3, Honda HR-V",92.41
-PROD00094,Oil Synthetic Economy 94,Oil,Torida,Economy,Synthetic,MPV,Daihatsu Xenia,75.78
-PROD00095,Oil Synthetic Economy 95,Oil,SuperCharge,Economy,Synthetic,MPV,Suzuki Ertiga,78.82
-PROD00096,Oil Synthetic Economy 96,Oil,Mobal1,Economy,Synthetic,MPV,Daihatsu Xenia,98.75
-PROD00097,Oil Synthetic Economy 97,Oil,Torida,Economy,Synthetic,Sedan,Honda Accord,186.43
-PROD00098,Oil Synthetic Economy 98,Oil,Mobal1,Economy,Synthetic,SUV,"Toyota Rush, Daihatsu Terios",153.5
-PROD00099,Oil Synthetic Economy 99,Oil,Mobal1,Economy,Synthetic,Sedan,Toyota Camry,44.7
-PROD00100,Oil Synthetic Economy 100,Oil,Geyestone,Economy,Synthetic,SUV,Mitsubishi Pajero,114.14
-PROD00101,Oil Mineral Economy 101,Oil,Enasava,Economy,Mineral,Hatchback,Suzuki Swift,154.96
-PROD00102,Oil Mineral Economy 102,Oil,Geyestone,Economy,Mineral,Hatchback,Honda Jazz,165.28
-PROD00103,Oil Mineral Economy 103,Oil,Mobal1,Economy,Mineral,Hatchback,Suzuki Swift,195.51
-PROD00104,Oil Mineral Economy 104,Oil,Geyestone,Economy,Mineral,SUV,"Mitsubishi Pajero, Honda CR-V",29.98
-PROD00105,Oil Mineral Economy 105,Oil,Enasava,Economy,Mineral,MPV,Daihatsu Xenia,65.92
-PROD00106,Oil Mineral Economy 106,Oil,Mobal1,Economy,Mineral,SUV,Daihatsu Terios,111.59
-PROD00107,Oil Mineral Economy 107,Oil,Torida,Economy,Mineral,SUV,Daihatsu Terios,104.92
-PROD00108,Oil Mineral Economy 108,Oil,Torida,Economy,Mineral,Crossover,Honda HR-V,119.52
-PROD00109,Oil Mineral Economy 109,Oil,Enasava,Economy,Mineral,Crossover,Toyota C-HR,94.93
-PROD00110,Oil Mineral Economy 110,Oil,Geyestone,Economy,Mineral,Hatchback,"Honda Jazz, Suzuki Swift",41.49
-PROD00111,Oil Synthetic Standard 111,Oil,SuperCharge,Standard,Synthetic,SUV,Daihatsu Terios,196.65
-PROD00112,Oil Synthetic Standard 112,Oil,Geyestone,Standard,Synthetic,Crossover,Mazda CX-3,159.23
-PROD00113,Oil Synthetic Standard 113,Oil,Batcliff,Standard,Synthetic,Hatchback,"Honda Jazz, Suzuki Swift",21.43
-PROD00114,Oil Synthetic Standard 114,Oil,SuperCharge,Standard,Synthetic,Sedan,"Nissan Teana, Mazda 6",63.67
-PROD00115,Oil Synthetic Standard 115,Oil,SuperCharge,Standard,Synthetic,Hatchback,"Toyota Yaris, Suzuki Swift",156.89
-PROD00116,Oil Synthetic Standard 116,Oil,Batcliff,Standard,Synthetic,Sedan,Toyota Camry,24.3
-PROD00117,Oil Synthetic Standard 117,Oil,Torida,Standard,Synthetic,MPV,"Toyota Avanza, Suzuki Ertiga",156.61
-PROD00118,Oil Synthetic Standard 118,Oil,SuperCharge,Standard,Synthetic,Crossover,"Nissan Juke, Mazda CX-3",196.96
-PROD00119,Oil Synthetic Standard 119,Oil,Mobal1,Standard,Synthetic,Crossover,"Nissan Juke, Mazda CX-3",70.37
-PROD00120,Oil Synthetic Standard 120,Oil,Mobal1,Standard,Synthetic,SUV,Mitsubishi Pajero,181.2
-PROD00121,Oil Mineral Standard 121,Oil,SuperCharge,Standard,Mineral,Crossover,Nissan Juke,44.03
-PROD00122,Oil Mineral Standard 122,Oil,Batcliff,Standard,Mineral,Crossover,Nissan Juke,139.24
-PROD00123,Oil Mineral Standard 123,Oil,Geyestone,Standard,Mineral,Sedan,Nissan Teana,173.16
-PROD00124,Oil Mineral Standard 124,Oil,Geyestone,Standard,Mineral,Crossover,"Toyota C-HR, Honda HR-V",62.05
-PROD00125,Oil Mineral Standard 125,Oil,Enasava,Standard,Mineral,Sedan,Toyota Camry,39.02
-PROD00126,Oil Mineral Standard 126,Oil,Torida,Standard,Mineral,Crossover,"Toyota C-HR, Honda HR-V",116.47
-PROD00127,Oil Mineral Standard 127,Oil,Geyestone,Standard,Mineral,Sedan,"Nissan Teana, Honda Accord",173.45
-PROD00128,Oil Mineral Standard 128,Oil,Mobal1,Standard,Mineral,SUV,Honda CR-V,145.44
-PROD00129,Oil Mineral Standard 129,Oil,Enasava,Standard,Mineral,SUV,Honda CR-V,36.42
-PROD00130,Oil Mineral Standard 130,Oil,Torida,Standard,Mineral,Sedan,"Mazda 6, Nissan Teana",141.89
-PROD00131,Oil Synthetic Premium 131,Oil,Batcliff,Premium,Synthetic,Hatchback,Honda Jazz,173.83
-PROD00132,Oil Synthetic Premium 132,Oil,Batcliff,Premium,Synthetic,MPV,Toyota Avanza,38.34
-PROD00133,Oil Synthetic Premium 133,Oil,Torida,Premium,Synthetic,Sedan,Toyota Camry,169.47
-PROD00134,Oil Synthetic Premium 134,Oil,Batcliff,Premium,Synthetic,Sedan,Honda Accord,87.0
-PROD00135,Oil Synthetic Premium 135,Oil,Torida,Premium,Synthetic,SUV,"Toyota Rush, Mitsubishi Pajero",55.6
-PROD00136,Oil Synthetic Premium 136,Oil,Geyestone,Premium,Synthetic,Crossover,Nissan Juke,42.05
-PROD00137,Oil Synthetic Premium 137,Oil,SuperCharge,Premium,Synthetic,Crossover,Honda HR-V,97.97
-PROD00138,Oil Synthetic Premium 138,Oil,Mobal1,Premium,Synthetic,Crossover,"Nissan Juke, Honda HR-V",96.8
-PROD00139,Oil Synthetic Premium 139,Oil,Geyestone,Premium,Synthetic,Hatchback,Toyota Yaris,70.37
-PROD00140,Oil Synthetic Premium 140,Oil,Mobal1,Premium,Synthetic,Sedan,Honda Accord,73.12
-PROD00141,Oil Mineral Premium 141,Oil,Geyestone,Premium,Mineral,Crossover,"Nissan Juke, Mazda CX-3",88.94
-PROD00142,Oil Mineral Premium 142,Oil,Mobal1,Premium,Mineral,Crossover,Honda HR-V,198.94
-PROD00143,Oil Mineral Premium 143,Oil,Mobal1,Premium,Mineral,MPV,Mitsubishi Xpander,84.64
-PROD00144,Oil Mineral Premium 144,Oil,SuperCharge,Premium,Mineral,MPV,"Daihatsu Xenia, Mitsubishi Xpander",77.89
-PROD00145,Oil Mineral Premium 145,Oil,Geyestone,Premium,Mineral,Hatchback,Honda Jazz,127.48
-PROD00146,Oil Mineral Premium 146,Oil,SuperCharge,Premium,Mineral,SUV,"Toyota Rush, Daihatsu Terios",84.34
-PROD00147,Oil Mineral Premium 147,Oil,Torida,Premium,Mineral,MPV,Suzuki Ertiga,64.61
-PROD00148,Oil Mineral Premium 148,Oil,SuperCharge,Premium,Mineral,Sedan,"Toyota Camry, Mazda 6",172.37
-PROD00149,Oil Mineral Premium 149,Oil,Enasava,Premium,Mineral,Crossover,"Honda HR-V, Nissan Juke",126.65
-PROD00150,Oil Mineral Premium 150,Oil,SuperCharge,Premium,Mineral,Hatchback,Suzuki Swift,121.45
-PROD00151,Shock Absorber Steel Economy 151,Shock Absorber,SuperCharge,Economy,Steel,MPV,Mitsubishi Xpander,75.63
-PROD00152,Shock Absorber Steel Economy 152,Shock Absorber,Torida,Economy,Steel,Crossover,Nissan Juke,61.87
-PROD00153,Shock Absorber Steel Economy 153,Shock Absorber,Torida,Economy,Steel,Sedan,Mazda 6,79.71
-PROD00154,Shock Absorber Steel Economy 154,Shock Absorber,Geyestone,Economy,Steel,MPV,Suzuki Ertiga,149.05
-PROD00155,Shock Absorber Steel Economy 155,Shock Absorber,Enasava,Economy,Steel,Hatchback,Honda Jazz,125.59
-PROD00156,Shock Absorber Steel Economy 156,Shock Absorber,Torida,Economy,Steel,Sedan,Nissan Teana,87.25
-PROD00157,Shock Absorber Steel Economy 157,Shock Absorber,Geyestone,Economy,Steel,Crossover,Toyota C-HR,78.07
-PROD00158,Shock Absorber Steel Economy 158,Shock Absorber,Geyestone,Economy,Steel,Sedan,"Mazda 6, Nissan Teana",51.36
-PROD00159,Shock Absorber Steel Economy 159,Shock Absorber,SuperCharge,Economy,Steel,MPV,"Suzuki Ertiga, Daihatsu Xenia",166.6
-PROD00160,Shock Absorber Steel Economy 160,Shock Absorber,Enasava,Economy,Steel,Crossover,"Toyota C-HR, Nissan Juke",151.19
-PROD00161,Shock Absorber Alloy Economy 161,Shock Absorber,SuperCharge,Economy,Alloy,MPV,"Toyota Avanza, Mitsubishi Xpander",77.28
-PROD00162,Shock Absorber Alloy Economy 162,Shock Absorber,Batcliff,Economy,Alloy,MPV,Toyota Avanza,45.32
-PROD00163,Shock Absorber Alloy Economy 163,Shock Absorber,Geyestone,Economy,Alloy,SUV,Honda CR-V,50.22
-PROD00164,Shock Absorber Alloy Economy 164,Shock Absorber,Geyestone,Economy,Alloy,SUV,"Mitsubishi Pajero, Toyota Rush",57.74
-PROD00165,Shock Absorber Alloy Economy 165,Shock Absorber,Mobal1,Economy,Alloy,SUV,"Honda CR-V, Toyota Rush",20.23
-PROD00166,Shock Absorber Alloy Economy 166,Shock Absorber,Batcliff,Economy,Alloy,Crossover,"Mazda CX-3, Nissan Juke",108.75
-PROD00167,Shock Absorber Alloy Economy 167,Shock Absorber,Batcliff,Economy,Alloy,Crossover,"Mazda CX-3, Nissan Juke",161.97
-PROD00168,Shock Absorber Alloy Economy 168,Shock Absorber,Batcliff,Economy,Alloy,MPV,Suzuki Ertiga,33.27
-PROD00169,Shock Absorber Alloy Economy 169,Shock Absorber,Geyestone,Economy,Alloy,SUV,"Toyota Rush, Daihatsu Terios",191.3
-PROD00170,Shock Absorber Alloy Economy 170,Shock Absorber,Enasava,Economy,Alloy,SUV,"Daihatsu Terios, Mitsubishi Pajero",151.76
-PROD00171,Shock Absorber Steel Standard 171,Shock Absorber,SuperCharge,Standard,Steel,MPV,Daihatsu Xenia,197.35
-PROD00172,Shock Absorber Steel Standard 172,Shock Absorber,Mobal1,Standard,Steel,Crossover,Mazda CX-3,49.7
-PROD00173,Shock Absorber Steel Standard 173,Shock Absorber,Torida,Standard,Steel,Crossover,Nissan Juke,79.6
-PROD00174,Shock Absorber Steel Standard 174,Shock Absorber,Geyestone,Standard,Steel,Sedan,"Nissan Teana, Mazda 6",73.53
-PROD00175,Shock Absorber Steel Standard 175,Shock Absorber,SuperCharge,Standard,Steel,SUV,Mitsubishi Pajero,118.94
-PROD00176,Shock Absorber Steel Standard 176,Shock Absorber,Geyestone,Standard,Steel,Crossover,Nissan Juke,20.69
-PROD00177,Shock Absorber Steel Standard 177,Shock Absorber,Torida,Standard,Steel,SUV,"Mitsubishi Pajero, Toyota Rush",24.63
-PROD00178,Shock Absorber Steel Standard 178,Shock Absorber,Torida,Standard,Steel,Sedan,"Toyota Camry, Honda Accord",75.5
-PROD00179,Shock Absorber Steel Standard 179,Shock Absorber,Geyestone,Standard,Steel,Crossover,"Mazda CX-3, Toyota C-HR",36.4
-PROD00180,Shock Absorber Steel Standard 180,Shock Absorber,Batcliff,Standard,Steel,MPV,"Suzuki Ertiga, Mitsubishi Xpander",86.49
-PROD00181,Shock Absorber Alloy Standard 181,Shock Absorber,Batcliff,Standard,Alloy,Crossover,Toyota C-HR,103.71
-PROD00182,Shock Absorber Alloy Standard 182,Shock Absorber,Mobal1,Standard,Alloy,Sedan,"Toyota Camry, Mazda 6",140.14
-PROD00183,Shock Absorber Alloy Standard 183,Shock Absorber,Enasava,Standard,Alloy,SUV,"Mitsubishi Pajero, Honda CR-V",119.65
-PROD00184,Shock Absorber Alloy Standard 184,Shock Absorber,Enasava,Standard,Alloy,Crossover,"Mazda CX-3, Toyota C-HR",105.73
-PROD00185,Shock Absorber Alloy Standard 185,Shock Absorber,SuperCharge,Standard,Alloy,SUV,"Toyota Rush, Honda CR-V",182.08
-PROD00186,Shock Absorber Alloy Standard 186,Shock Absorber,Batcliff,Standard,Alloy,MPV,Toyota Avanza,51.12
-PROD00187,Shock Absorber Alloy Standard 187,Shock Absorber,Enasava,Standard,Alloy,Sedan,Honda Accord,27.68
-PROD00188,Shock Absorber Alloy Standard 188,Shock Absorber,Enasava,Standard,Alloy,SUV,"Daihatsu Terios, Honda CR-V",170.14
-PROD00189,Shock Absorber Alloy Standard 189,Shock Absorber,Batcliff,Standard,Alloy,Hatchback,"Honda Jazz, Mazda 2",120.15
-PROD00190,Shock Absorber Alloy Standard 190,Shock Absorber,Batcliff,Standard,Alloy,MPV,"Daihatsu Xenia, Mitsubishi Xpander",185.09
-PROD00191,Shock Absorber Steel Premium 191,Shock Absorber,Enasava,Premium,Steel,SUV,"Toyota Rush, Daihatsu Terios",46.68
-PROD00192,Shock Absorber Steel Premium 192,Shock Absorber,SuperCharge,Premium,Steel,MPV,Toyota Avanza,160.32
-PROD00193,Shock Absorber Steel Premium 193,Shock Absorber,Batcliff,Premium,Steel,Hatchback,"Mazda 2, Toyota Yaris",137.86
-PROD00194,Shock Absorber Steel Premium 194,Shock Absorber,Geyestone,Premium,Steel,MPV,"Toyota Avanza, Mitsubishi Xpander",92.54
-PROD00195,Shock Absorber Steel Premium 195,Shock Absorber,Geyestone,Premium,Steel,MPV,"Toyota Avanza, Suzuki Ertiga",144.29
-PROD00196,Shock Absorber Steel Premium 196,Shock Absorber,Torida,Premium,Steel,SUV,"Honda CR-V, Daihatsu Terios",80.82
-PROD00197,Shock Absorber Steel Premium 197,Shock Absorber,Mobal1,Premium,Steel,Hatchback,"Suzuki Swift, Toyota Yaris",143.27
-PROD00198,Shock Absorber Steel Premium 198,Shock Absorber,Mobal1,Premium,Steel,Sedan,Nissan Teana,99.76
-PROD00199,Shock Absorber Steel Premium 199,Shock Absorber,Mobal1,Premium,Steel,Hatchback,"Mazda 2, Suzuki Swift",36.07
-PROD00200,Shock Absorber Steel Premium 200,Shock Absorber,Mobal1,Premium,Steel,Crossover,Mazda CX-3,107.2
-PROD00201,Shock Absorber Alloy Premium 201,Shock Absorber,Enasava,Premium,Alloy,MPV,"Toyota Avanza, Daihatsu Xenia",31.81
-PROD00202,Shock Absorber Alloy Premium 202,Shock Absorber,SuperCharge,Premium,Alloy,MPV,"Suzuki Ertiga, Daihatsu Xenia",25.21
-PROD00203,Shock Absorber Alloy Premium 203,Shock Absorber,Enasava,Premium,Alloy,Sedan,Toyota Camry,25.95
-PROD00204,Shock Absorber Alloy Premium 204,Shock Absorber,Geyestone,Premium,Alloy,SUV,"Daihatsu Terios, Mitsubishi Pajero",168.23
-PROD00205,Shock Absorber Alloy Premium 205,Shock Absorber,Torida,Premium,Alloy,MPV,"Toyota Avanza, Daihatsu Xenia",63.55
-PROD00206,Shock Absorber Alloy Premium 206,Shock Absorber,SuperCharge,Premium,Alloy,Crossover,"Honda HR-V, Mazda CX-3",119.24
-PROD00207,Shock Absorber Alloy Premium 207,Shock Absorber,Mobal1,Premium,Alloy,Hatchback,Suzuki Swift,169.56
-PROD00208,Shock Absorber Alloy Premium 208,Shock Absorber,Torida,Premium,Alloy,SUV,"Toyota Rush, Daihatsu Terios",49.32
-PROD00209,Shock Absorber Alloy Premium 209,Shock Absorber,Mobal1,Premium,Alloy,MPV,Suzuki Ertiga,60.52
-PROD00210,Shock Absorber Alloy Premium 210,Shock Absorber,Torida,Premium,Alloy,Sedan,"Mazda 6, Nissan Teana",175.63
-PROD00211,Spare Parts Steel Economy 211,Spare Parts,Enasava,Economy,Steel,SUV,"Daihatsu Terios, Honda CR-V",128.21
-PROD00212,Spare Parts Steel Economy 212,Spare Parts,SuperCharge,Economy,Steel,SUV,Honda CR-V,164.92
-PROD00213,Spare Parts Steel Economy 213,Spare Parts,Geyestone,Economy,Steel,Hatchback,"Mazda 2, Toyota Yaris",102.62
-PROD00214,Spare Parts Steel Economy 214,Spare Parts,SuperCharge,Economy,Steel,Sedan,"Nissan Teana, Mazda 6",168.38
-PROD00215,Spare Parts Steel Economy 215,Spare Parts,SuperCharge,Economy,Steel,Crossover,Nissan Juke,199.9
-PROD00216,Spare Parts Steel Economy 216,Spare Parts,Torida,Economy,Steel,Hatchback,"Suzuki Swift, Mazda 2",106.71
-PROD00217,Spare Parts Steel Economy 217,Spare Parts,Geyestone,Economy,Steel,Hatchback,"Suzuki Swift, Toyota Yaris",138.1
-PROD00218,Spare Parts Steel Economy 218,Spare Parts,SuperCharge,Economy,Steel,Hatchback,Toyota Yaris,157.79
-PROD00219,Spare Parts Steel Economy 219,Spare Parts,Enasava,Economy,Steel,SUV,"Honda CR-V, Mitsubishi Pajero",149.83
-PROD00220,Spare Parts Steel Economy 220,Spare Parts,Batcliff,Economy,Steel,Crossover,"Toyota C-HR, Honda HR-V",89.89
-PROD00221,Spare Parts Aluminum Economy 221,Spare Parts,Mobal1,Economy,Aluminum,SUV,Honda CR-V,148.41
-PROD00222,Spare Parts Aluminum Economy 222,Spare Parts,Geyestone,Economy,Aluminum,MPV,"Daihatsu Xenia, Mitsubishi Xpander",172.18
-PROD00223,Spare Parts Aluminum Economy 223,Spare Parts,Torida,Economy,Aluminum,MPV,Daihatsu Xenia,104.74
-PROD00224,Spare Parts Aluminum Economy 224,Spare Parts,Mobal1,Economy,Aluminum,Hatchback,Suzuki Swift,36.07
-PROD00225,Spare Parts Aluminum Economy 225,Spare Parts,Batcliff,Economy,Aluminum,Hatchback,Suzuki Swift,161.86
-PROD00226,Spare Parts Aluminum Economy 226,Spare Parts,Geyestone,Economy,Aluminum,Hatchback,"Suzuki Swift, Mazda 2",103.48
-PROD00227,Spare Parts Aluminum Economy 227,Spare Parts,SuperCharge,Economy,Aluminum,SUV,"Toyota Rush, Honda CR-V",124.46
-PROD00228,Spare Parts Aluminum Economy 228,Spare Parts,Enasava,Economy,Aluminum,MPV,Mitsubishi Xpander,110.09
-PROD00229,Spare Parts Aluminum Economy 229,Spare Parts,Enasava,Economy,Aluminum,Crossover,"Mazda CX-3, Nissan Juke",44.73
-PROD00230,Spare Parts Aluminum Economy 230,Spare Parts,Batcliff,Economy,Aluminum,Sedan,"Mazda 6, Nissan Teana",45.78
-PROD00231,Spare Parts Steel Standard 231,Spare Parts,Geyestone,Standard,Steel,Sedan,Mazda 6,133.59
-PROD00232,Spare Parts Steel Standard 232,Spare Parts,Batcliff,Standard,Steel,Sedan,"Toyota Camry, Mazda 6",69.24
-PROD00233,Spare Parts Steel Standard 233,Spare Parts,Torida,Standard,Steel,Sedan,Mazda 6,43.29
-PROD00234,Spare Parts Steel Standard 234,Spare Parts,Batcliff,Standard,Steel,Crossover,"Mazda CX-3, Honda HR-V",89.0
-PROD00235,Spare Parts Steel Standard 235,Spare Parts,Torida,Standard,Steel,SUV,Honda CR-V,180.56
-PROD00236,Spare Parts Steel Standard 236,Spare Parts,Mobal1,Standard,Steel,MPV,Toyota Avanza,20.74
-PROD00237,Spare Parts Steel Standard 237,Spare Parts,Geyestone,Standard,Steel,Sedan,Nissan Teana,43.21
-PROD00238,Spare Parts Steel Standard 238,Spare Parts,Torida,Standard,Steel,Crossover,"Honda HR-V, Nissan Juke",73.68
-PROD00239,Spare Parts Steel Standard 239,Spare Parts,Mobal1,Standard,Steel,Hatchback,"Suzuki Swift, Toyota Yaris",199.19
-PROD00240,Spare Parts Steel Standard 240,Spare Parts,Enasava,Standard,Steel,Hatchback,"Suzuki Swift, Honda Jazz",190.66
-PROD00241,Spare Parts Aluminum Standard 241,Spare Parts,Enasava,Standard,Aluminum,Crossover,Honda HR-V,150.89
-PROD00242,Spare Parts Aluminum Standard 242,Spare Parts,SuperCharge,Standard,Aluminum,Sedan,Toyota Camry,110.83
-PROD00243,Spare Parts Aluminum Standard 243,Spare Parts,Mobal1,Standard,Aluminum,SUV,"Toyota Rush, Daihatsu Terios",66.04
-PROD00244,Spare Parts Aluminum Standard 244,Spare Parts,Mobal1,Standard,Aluminum,MPV,Toyota Avanza,39.46
-PROD00245,Spare Parts Aluminum Standard 245,Spare Parts,Batcliff,Standard,Aluminum,SUV,Toyota Rush,99.98
-PROD00246,Spare Parts Aluminum Standard 246,Spare Parts,Enasava,Standard,Aluminum,SUV,"Mitsubishi Pajero, Honda CR-V",56.99
-PROD00247,Spare Parts Aluminum Standard 247,Spare Parts,Torida,Standard,Aluminum,SUV,"Mitsubishi Pajero, Honda CR-V",139.25
-PROD00248,Spare Parts Aluminum Standard 248,Spare Parts,Torida,Standard,Aluminum,Hatchback,Mazda 2,112.09
-PROD00249,Spare Parts Aluminum Standard 249,Spare Parts,Torida,Standard,Aluminum,MPV,Daihatsu Xenia,161.26
-PROD00250,Spare Parts Aluminum Standard 250,Spare Parts,Geyestone,Standard,Aluminum,Crossover,Honda HR-V,169.67
-PROD00251,Spare Parts Steel Premium 251,Spare Parts,Enasava,Premium,Steel,Sedan,"Mazda 6, Honda Accord",27.09
-PROD00252,Spare Parts Steel Premium 252,Spare Parts,Geyestone,Premium,Steel,Crossover,Mazda CX-3,62.21
-PROD00253,Spare Parts Steel Premium 253,Spare Parts,SuperCharge,Premium,Steel,SUV,Toyota Rush,140.42
-PROD00254,Spare Parts Steel Premium 254,Spare Parts,Mobal1,Premium,Steel,Sedan,Toyota Camry,150.24
-PROD00255,Spare Parts Steel Premium 255,Spare Parts,Geyestone,Premium,Steel,Hatchback,Mazda 2,67.54
-PROD00256,Spare Parts Steel Premium 256,Spare Parts,Torida,Premium,Steel,SUV,Daihatsu Terios,173.4
-PROD00257,Spare Parts Steel Premium 257,Spare Parts,Torida,Premium,Steel,Hatchback,"Mazda 2, Suzuki Swift",37.1
-PROD00258,Spare Parts Steel Premium 258,Spare Parts,Mobal1,Premium,Steel,SUV,Daihatsu Terios,136.5
-PROD00259,Spare Parts Steel Premium 259,Spare Parts,Geyestone,Premium,Steel,Hatchback,"Mazda 2, Suzuki Swift",178.13
-PROD00260,Spare Parts Steel Premium 260,Spare Parts,Torida,Premium,Steel,SUV,"Honda CR-V, Toyota Rush",92.14
-PROD00261,Spare Parts Aluminum Premium 261,Spare Parts,Batcliff,Premium,Aluminum,Crossover,"Mazda CX-3, Toyota C-HR",163.98
-PROD00262,Spare Parts Aluminum Premium 262,Spare Parts,Mobal1,Premium,Aluminum,Sedan,Honda Accord,150.75
-PROD00263,Spare Parts Aluminum Premium 263,Spare Parts,SuperCharge,Premium,Aluminum,Sedan,Mazda 6,106.88
-PROD00264,Spare Parts Aluminum Premium 264,Spare Parts,Batcliff,Premium,Aluminum,MPV,"Suzuki Ertiga, Daihatsu Xenia",160.25
-PROD00265,Spare Parts Aluminum Premium 265,Spare Parts,Batcliff,Premium,Aluminum,MPV,Suzuki Ertiga,185.67
-PROD00266,Spare Parts Aluminum Premium 266,Spare Parts,Torida,Premium,Aluminum,SUV,"Mitsubishi Pajero, Toyota Rush",67.09
-PROD00267,Spare Parts Aluminum Premium 267,Spare Parts,Mobal1,Premium,Aluminum,Hatchback,Toyota Yaris,177.17
-PROD00268,Spare Parts Aluminum Premium 268,Spare Parts,Mobal1,Premium,Aluminum,MPV,Mitsubishi Xpander,150.8
-PROD00269,Spare Parts Aluminum Premium 269,Spare Parts,SuperCharge,Premium,Aluminum,Crossover,"Mazda CX-3, Nissan Juke",180.57
-PROD00270,Spare Parts Aluminum Premium 270,Spare Parts,Mobal1,Premium,Aluminum,MPV,Toyota Avanza,188.19
-PROD00271,Accessories Plastic Economy 271,Accessories,Torida,Economy,Plastic,MPV,"Mitsubishi Xpander, Toyota Avanza",155.26
-PROD00272,Accessories Plastic Economy 272,Accessories,Geyestone,Economy,Plastic,Hatchback,Suzuki Swift,29.06
-PROD00273,Accessories Plastic Economy 273,Accessories,Torida,Economy,Plastic,Sedan,"Mazda 6, Toyota Camry",102.64
-PROD00274,Accessories Plastic Economy 274,Accessories,Batcliff,Economy,Plastic,MPV,"Toyota Avanza, Suzuki Ertiga",76.89
-PROD00275,Accessories Plastic Economy 275,Accessories,Batcliff,Economy,Plastic,Crossover,Nissan Juke,94.22
-PROD00276,Accessories Plastic Economy 276,Accessories,SuperCharge,Economy,Plastic,MPV,Toyota Avanza,193.37
-PROD00277,Accessories Plastic Economy 277,Accessories,Geyestone,Economy,Plastic,Hatchback,Mazda 2,85.4
-PROD00278,Accessories Plastic Economy 278,Accessories,Geyestone,Economy,Plastic,SUV,Mitsubishi Pajero,120.83
-PROD00279,Accessories Plastic Economy 279,Accessories,Batcliff,Economy,Plastic,MPV,"Daihatsu Xenia, Mitsubishi Xpander",40.52
-PROD00280,Accessories Plastic Economy 280,Accessories,Geyestone,Economy,Plastic,Sedan,Nissan Teana,169.38
-PROD00281,Accessories Composite Economy 281,Accessories,Enasava,Economy,Composite,Hatchback,"Honda Jazz, Mazda 2",108.64
-PROD00282,Accessories Composite Economy 282,Accessories,SuperCharge,Economy,Composite,Crossover,Toyota C-HR,55.27
-PROD00283,Accessories Composite Economy 283,Accessories,Enasava,Economy,Composite,SUV,"Daihatsu Terios, Mitsubishi Pajero",149.02
-PROD00284,Accessories Composite Economy 284,Accessories,Mobal1,Economy,Composite,SUV,"Toyota Rush, Honda CR-V",125.99
-PROD00285,Accessories Composite Economy 285,Accessories,Torida,Economy,Composite,Crossover,"Honda HR-V, Mazda CX-3",115.47
-PROD00286,Accessories Composite Economy 286,Accessories,Enasava,Economy,Composite,SUV,"Mitsubishi Pajero, Honda CR-V",144.53
-PROD00287,Accessories Composite Economy 287,Accessories,Batcliff,Economy,Composite,Sedan,Toyota Camry,138.35
-PROD00288,Accessories Composite Economy 288,Accessories,SuperCharge,Economy,Composite,MPV,"Mitsubishi Xpander, Suzuki Ertiga",184.86
-PROD00289,Accessories Composite Economy 289,Accessories,Geyestone,Economy,Composite,Sedan,"Mazda 6, Honda Accord",101.51
-PROD00290,Accessories Composite Economy 290,Accessories,SuperCharge,Economy,Composite,Sedan,Mazda 6,146.0
-PROD00291,Accessories Plastic Standard 291,Accessories,Mobal1,Standard,Plastic,MPV,"Daihatsu Xenia, Mitsubishi Xpander",188.39
-PROD00292,Accessories Plastic Standard 292,Accessories,SuperCharge,Standard,Plastic,Sedan,Honda Accord,148.59
-PROD00293,Accessories Plastic Standard 293,Accessories,SuperCharge,Standard,Plastic,Hatchback,Toyota Yaris,117.65
-PROD00294,Accessories Plastic Standard 294,Accessories,SuperCharge,Standard,Plastic,Hatchback,Suzuki Swift,106.47
-PROD00295,Accessories Plastic Standard 295,Accessories,Torida,Standard,Plastic,MPV,"Daihatsu Xenia, Suzuki Ertiga",114.09
-PROD00296,Accessories Plastic Standard 296,Accessories,Mobal1,Standard,Plastic,SUV,"Daihatsu Terios, Toyota Rush",30.19
-PROD00297,Accessories Plastic Standard 297,Accessories,Mobal1,Standard,Plastic,Hatchback,Suzuki Swift,65.1
-PROD00298,Accessories Plastic Standard 298,Accessories,Torida,Standard,Plastic,SUV,"Daihatsu Terios, Honda CR-V",84.56
-PROD00299,Accessories Plastic Standard 299,Accessories,Mobal1,Standard,Plastic,Crossover,Honda HR-V,136.48
-PROD00300,Accessories Plastic Standard 300,Accessories,Mobal1,Standard,Plastic,Crossover,Toyota C-HR,139.61
-PROD00301,Accessories Composite Standard 301,Accessories,Geyestone,Standard,Composite,Crossover,"Mazda CX-3, Toyota C-HR",193.85
-PROD00302,Accessories Composite Standard 302,Accessories,Enasava,Standard,Composite,SUV,Honda CR-V,131.7
-PROD00303,Accessories Composite Standard 303,Accessories,SuperCharge,Standard,Composite,Crossover,Toyota C-HR,118.39
-PROD00304,Accessories Composite Standard 304,Accessories,Geyestone,Standard,Composite,MPV,Suzuki Ertiga,100.79
-PROD00305,Accessories Composite Standard 305,Accessories,Mobal1,Standard,Composite,SUV,Daihatsu Terios,112.49
-PROD00306,Accessories Composite Standard 306,Accessories,Geyestone,Standard,Composite,Crossover,Mazda CX-3,120.19
-PROD00307,Accessories Composite Standard 307,Accessories,Torida,Standard,Composite,Sedan,Nissan Teana,79.5
-PROD00308,Accessories Composite Standard 308,Accessories,Geyestone,Standard,Composite,Sedan,Honda Accord,127.44
-PROD00309,Accessories Composite Standard 309,Accessories,SuperCharge,Standard,Composite,MPV,"Mitsubishi Xpander, Daihatsu Xenia",84.46
-PROD00310,Accessories Composite Standard 310,Accessories,SuperCharge,Standard,Composite,Hatchback,Toyota Yaris,32.27
-PROD00311,Accessories Plastic Premium 311,Accessories,SuperCharge,Premium,Plastic,MPV,Mitsubishi Xpander,116.67
-PROD00312,Accessories Plastic Premium 312,Accessories,Mobal1,Premium,Plastic,SUV,"Daihatsu Terios, Toyota Rush",79.74
-PROD00313,Accessories Plastic Premium 313,Accessories,SuperCharge,Premium,Plastic,Hatchback,"Toyota Yaris, Suzuki Swift",105.47
-PROD00314,Accessories Plastic Premium 314,Accessories,Mobal1,Premium,Plastic,MPV,Toyota Avanza,82.28
-PROD00315,Accessories Plastic Premium 315,Accessories,Mobal1,Premium,Plastic,Sedan,Toyota Camry,179.42
-PROD00316,Accessories Plastic Premium 316,Accessories,Geyestone,Premium,Plastic,Crossover,Mazda CX-3,117.24
-PROD00317,Accessories Plastic Premium 317,Accessories,SuperCharge,Premium,Plastic,Hatchback,Suzuki Swift,164.51
-PROD00318,Accessories Plastic Premium 318,Accessories,Mobal1,Premium,Plastic,Crossover,"Nissan Juke, Honda HR-V",54.65
-PROD00319,Accessories Plastic Premium 319,Accessories,Enasava,Premium,Plastic,MPV,Toyota Avanza,194.89
-PROD00320,Accessories Plastic Premium 320,Accessories,Enasava,Premium,Plastic,MPV,Toyota Avanza,140.66
-PROD00321,Accessories Composite Premium 321,Accessories,SuperCharge,Premium,Composite,Sedan,"Toyota Camry, Mazda 6",169.17
-PROD00322,Accessories Composite Premium 322,Accessories,Torida,Premium,Composite,Crossover,Honda HR-V,102.66
-PROD00323,Accessories Composite Premium 323,Accessories,Torida,Premium,Composite,Hatchback,Honda Jazz,29.77
-PROD00324,Accessories Composite Premium 324,Accessories,Geyestone,Premium,Composite,Hatchback,Toyota Yaris,93.37
-PROD00325,Accessories Composite Premium 325,Accessories,Torida,Premium,Composite,Crossover,"Mazda CX-3, Honda HR-V",90.11
-PROD00326,Accessories Composite Premium 326,Accessories,Mobal1,Premium,Composite,SUV,Toyota Rush,125.41
-PROD00327,Accessories Composite Premium 327,Accessories,Mobal1,Premium,Composite,SUV,"Toyota Rush, Daihatsu Terios",74.24
-PROD00328,Accessories Composite Premium 328,Accessories,Batcliff,Premium,Composite,SUV,"Mitsubishi Pajero, Daihatsu Terios",167.98
-PROD00329,Accessories Composite Premium 329,Accessories,Enasava,Premium,Composite,SUV,"Daihatsu Terios, Honda CR-V",44.55
-PROD00330,Accessories Composite Premium 330,Accessories,Mobal1,Premium,Composite,Crossover,"Honda HR-V, Mazda CX-3",179.66
+product_id,product_name,category,grade,material,brand,vehicle_type,compatible_vehicle,unit_price
+P0111,AutoMax Shock Absorber 159,Shock Absorber,Economy,Alloy,AutoMax,Crossover,Honda HR-V,236.55
+P0014,AutoMax Shock Absorber 316,Shock Absorber,Premium,Alloy,AutoMax,Sedan,"Honda Civic, Hyundai Elantra",114.15
+P0017,AutoMax Shock Absorber 396,Shock Absorber,Economy,Alloy,AutoMax,Hatchback,"Mazda 2, Suzuki Swift",325.47
+P0149,AutoMax Shock Absorber 711,Shock Absorber,Premium,Alloy,AutoMax,SUV,Honda CR-V,283.8
+P0100,AutoMax Shock Absorber 756,Shock Absorber,Economy,Alloy,AutoMax,SUV,"Toyota Rush, Daihatsu Terios",153.01
+P0173,DriveWell Shock Absorber 291,Shock Absorber,Economy,Alloy,DriveWell,Sedan,Hyundai Elantra,155.08
+P0037,DriveWell Shock Absorber 528,Shock Absorber,Economy,Alloy,DriveWell,Crossover,"Toyota CH-R, Hyundai Kona",258.91
+P0167,GearPro Shock Absorber 302,Shock Absorber,Economy,Alloy,GearPro,Sedan,"Hyundai Elantra, Honda Civic",372.63
+P0089,GearPro Shock Absorber 312,Shock Absorber,Economy,Alloy,GearPro,Crossover,"Nissan Juke, Toyota CH-R",81.97
+P0041,GearPro Shock Absorber 910,Shock Absorber,Economy,Alloy,GearPro,SUV,"Toyota Rush, Honda CR-V",330.23
+P0077,SpeedLine Shock Absorber 346,Shock Absorber,Standard,Alloy,SpeedLine,SUV,Mitsubishi Pajero,260.14
+P0061,SpeedLine Shock Absorber 562,Shock Absorber,Economy,Alloy,SpeedLine,Sedan,Toyota Vios,428.62
+P0168,SpeedLine Shock Absorber 820,Shock Absorber,Premium,Alloy,SpeedLine,SUV,Daihatsu Terios,150.0
+P0122,SpeedLine Shock Absorber 872,Shock Absorber,Premium,Alloy,SpeedLine,Crossover,Toyota CH-R,197.58
+P0165,TorqueX Shock Absorber 969,Shock Absorber,Premium,Alloy,TorqueX,SUV,"Toyota Rush, Honda CR-V",70.82
+P0129,TorqueX Shock Absorber 984,Shock Absorber,Economy,Alloy,TorqueX,Sedan,"Mazda 3, Toyota Vios",37.17
+P0112,AutoMax Spare Parts 174,Spare Parts,Standard,Aluminum,AutoMax,Crossover,"Nissan Juke, Toyota CH-R",120.68
+P0039,AutoMax Spare Parts 547,Spare Parts,Economy,Aluminum,AutoMax,Sedan,"Hyundai Elantra, Mazda 3",86.46
+P0150,AutoMax Spare Parts 672,Spare Parts,Standard,Aluminum,AutoMax,Hatchback,"Mazda 2, Toyota Yaris",366.55
+P0029,AutoMax Spare Parts 841,Spare Parts,Economy,Aluminum,AutoMax,Hatchback,Mazda 2,152.81
+P0118,DriveWell Spare Parts 339,Spare Parts,Economy,Aluminum,DriveWell,SUV,Toyota Rush,210.1
+P0171,DriveWell Spare Parts 344,Spare Parts,Economy,Aluminum,DriveWell,MPV,Daihatsu Xenia,166.9
+P0091,DriveWell Spare Parts 405,Spare Parts,Standard,Aluminum,DriveWell,Crossover,Hyundai Kona,150.32
+P0090,DriveWell Spare Parts 450,Spare Parts,Standard,Aluminum,DriveWell,Crossover,"Hyundai Kona, Honda HR-V",457.38
+P0177,DriveWell Spare Parts 656,Spare Parts,Premium,Aluminum,DriveWell,MPV,Toyota Avanza,144.93
+P0160,DriveWell Spare Parts 773,Spare Parts,Standard,Aluminum,DriveWell,SUV,"Toyota Rush, Mitsubishi Pajero",387.94
+P0084,DriveWell Spare Parts 857,Spare Parts,Economy,Aluminum,DriveWell,Hatchback,Mazda 2,495.45
+P0120,GearPro Spare Parts 381,Spare Parts,Premium,Aluminum,GearPro,Hatchback,Honda Jazz,215.58
+P0101,GearPro Spare Parts 438,Spare Parts,Premium,Aluminum,GearPro,MPV,"Mitsubishi Xpander, Toyota Avanza",407.27
+P0036,GearPro Spare Parts 903,Spare Parts,Standard,Aluminum,GearPro,MPV,Mitsubishi Xpander,483.31
+P0175,SpeedLine Spare Parts 678,Spare Parts,Premium,Aluminum,SpeedLine,Crossover,"Honda HR-V, Hyundai Kona",96.12
+P0184,SpeedLine Spare Parts 887,Spare Parts,Premium,Aluminum,SpeedLine,Crossover,"Nissan Juke, Toyota CH-R",400.38
+P0179,AutoMax Accessories 220,Accessories,Economy,Composite,AutoMax,Crossover,"Toyota CH-R, Nissan Juke",227.95
+P0136,AutoMax Accessories 636,Accessories,Standard,Composite,AutoMax,MPV,"Daihatsu Xenia, Toyota Avanza",460.25
+P0048,AutoMax Accessories 852,Accessories,Economy,Composite,AutoMax,Hatchback,Toyota Yaris,389.18
+P0093,AutoMax Accessories 923,Accessories,Standard,Composite,AutoMax,MPV,"Suzuki Ertiga, Daihatsu Xenia",477.99
+P0079,DriveWell Accessories 370,Accessories,Standard,Composite,DriveWell,SUV,Mitsubishi Pajero,79.96
+P0170,DriveWell Accessories 568,Accessories,Standard,Composite,DriveWell,Crossover,"Nissan Juke, Hyundai Kona",185.71
+P0068,DriveWell Accessories 664,Accessories,Economy,Composite,DriveWell,Hatchback,Suzuki Swift,110.21
+P0026,DriveWell Accessories 930,Accessories,Economy,Composite,DriveWell,Crossover,Nissan Juke,233.5
+P0132,GearPro Accessories 600,Accessories,Standard,Composite,GearPro,Hatchback,Honda Jazz,364.35
+P0127,GearPro Accessories 665,Accessories,Economy,Composite,GearPro,MPV,Suzuki Ertiga,458.84
+P0031,GearPro Accessories 758,Accessories,Premium,Composite,GearPro,MPV,Mitsubishi Xpander,286.08
+P0074,SpeedLine Accessories 225,Accessories,Standard,Composite,SpeedLine,Sedan,"Honda Civic, Toyota Vios",132.24
+P0066,SpeedLine Accessories 286,Accessories,Economy,Composite,SpeedLine,MPV,"Daihatsu Xenia, Mitsubishi Xpander",325.3
+P0058,SpeedLine Accessories 479,Accessories,Standard,Composite,SpeedLine,MPV,Daihatsu Xenia,344.35
+P0158,TorqueX Accessories 347,Accessories,Economy,Composite,TorqueX,SUV,"Mitsubishi Pajero, Toyota Rush",322.17
+P0080,TorqueX Accessories 471,Accessories,Standard,Composite,TorqueX,SUV,"Toyota Rush, Honda CR-V",287.48
+P0186,TorqueX Accessories 606,Accessories,Economy,Composite,TorqueX,SUV,"Daihatsu Terios, Mitsubishi Pajero",415.05
+P0053,TorqueX Accessories 631,Accessories,Standard,Composite,TorqueX,Sedan,"Hyundai Elantra, Toyota Vios",463.29
+P0064,AutoMax Batteries 188,Batteries,Economy,Lead Acid,AutoMax,Hatchback,"Mazda 2, Suzuki Swift",77.94
+P0197,AutoMax Batteries 402,Batteries,Premium,Lead Acid,AutoMax,Hatchback,Honda Jazz,377.7
+P0062,AutoMax Batteries 407,Batteries,Premium,Lead Acid,AutoMax,Hatchback,"Toyota Yaris, Suzuki Swift",277.95
+P0052,AutoMax Batteries 509,Batteries,Standard,Lead Acid,AutoMax,Hatchback,"Toyota Yaris, Honda Jazz",226.92
+P0078,AutoMax Batteries 769,Batteries,Premium,Lead Acid,AutoMax,SUV,"Mitsubishi Pajero, Honda CR-V",442.93
+P0181,DriveWell Batteries 399,Batteries,Economy,Lead Acid,DriveWell,Hatchback,Suzuki Swift,489.82
+P0019,DriveWell Batteries 441,Batteries,Standard,Lead Acid,DriveWell,SUV,"Honda CR-V, Mitsubishi Pajero",179.66
+P0095,DriveWell Batteries 700,Batteries,Economy,Lead Acid,DriveWell,Hatchback,Toyota Yaris,313.6
+P0070,DriveWell Batteries 756,Batteries,Economy,Lead Acid,DriveWell,SUV,Toyota Rush,37.05
+P0180,DriveWell Batteries 933,Batteries,Economy,Lead Acid,DriveWell,Crossover,Hyundai Kona,395.65
+P0007,GearPro Batteries 687,Batteries,Premium,Lead Acid,GearPro,SUV,"Honda CR-V, Toyota Rush",384.86
+P0092,GearPro Batteries 914,Batteries,Standard,Lead Acid,GearPro,Crossover,"Honda HR-V, Hyundai Kona",286.84
+P0073,SpeedLine Batteries 420,Batteries,Standard,Lead Acid,SpeedLine,Crossover,Toyota CH-R,309.23
+P0108,SpeedLine Batteries 710,Batteries,Standard,Lead Acid,SpeedLine,MPV,"Daihatsu Xenia, Toyota Avanza",344.97
+P0164,TorqueX Batteries 199,Batteries,Standard,Lead Acid,TorqueX,Crossover,Honda HR-V,183.93
+P0015,TorqueX Batteries 279,Batteries,Standard,Lead Acid,TorqueX,SUV,Mitsubishi Pajero,377.3
+P0082,TorqueX Batteries 511,Batteries,Economy,Lead Acid,TorqueX,Hatchback,"Honda Jazz, Toyota Yaris",307.19
+P0104,TorqueX Batteries 557,Batteries,Economy,Lead Acid,TorqueX,Sedan,Mazda 3,201.03
+P0102,TorqueX Batteries 681,Batteries,Premium,Lead Acid,TorqueX,Sedan,Mazda 3,398.52
+P0051,TorqueX Batteries 762,Batteries,Economy,Lead Acid,TorqueX,MPV,"Suzuki Ertiga, Daihatsu Xenia",32.76
+P0117,AutoMax Batteries 203,Batteries,Standard,Lithium,AutoMax,SUV,"Toyota Rush, Mitsubishi Pajero",114.95
+P0130,AutoMax Batteries 335,Batteries,Premium,Lithium,AutoMax,Hatchback,"Suzuki Swift, Toyota Yaris",110.15
+P0067,AutoMax Batteries 430,Batteries,Standard,Lithium,AutoMax,MPV,Mitsubishi Xpander,94.86
+P0134,AutoMax Batteries 482,Batteries,Premium,Lithium,AutoMax,Sedan,Toyota Vios,260.28
+P0194,AutoMax Batteries 839,Batteries,Premium,Lithium,AutoMax,MPV,Daihatsu Xenia,228.45
+P0016,DriveWell Batteries 143,Batteries,Standard,Lithium,DriveWell,MPV,"Toyota Avanza, Daihatsu Xenia",432.96
+P0137,DriveWell Batteries 180,Batteries,Economy,Lithium,DriveWell,MPV,"Mitsubishi Xpander, Daihatsu Xenia",400.54
+P0096,DriveWell Batteries 438,Batteries,Economy,Lithium,DriveWell,Sedan,Honda Civic,63.6
+P0133,DriveWell Batteries 522,Batteries,Premium,Lithium,DriveWell,SUV,Toyota Rush,385.7
+P0005,DriveWell Batteries 781,Batteries,Premium,Lithium,DriveWell,MPV,"Toyota Avanza, Daihatsu Xenia",186.5
+P0008,DriveWell Batteries 880,Batteries,Standard,Lithium,DriveWell,Hatchback,Honda Jazz,147.54
+P0020,DriveWell Batteries 938,Batteries,Economy,Lithium,DriveWell,MPV,Mitsubishi Xpander,185.28
+P0195,SpeedLine Batteries 243,Batteries,Premium,Lithium,SpeedLine,MPV,"Daihatsu Xenia, Toyota Avanza",449.85
+P0152,SpeedLine Batteries 469,Batteries,Economy,Lithium,SpeedLine,Hatchback,"Suzuki Swift, Honda Jazz",394.59
+P0151,SpeedLine Batteries 604,Batteries,Premium,Lithium,SpeedLine,Sedan,Mazda 3,161.05
+P0106,SpeedLine Batteries 820,Batteries,Economy,Lithium,SpeedLine,Hatchback,Mazda 2,347.75
+P0163,SpeedLine Batteries 847,Batteries,Standard,Lithium,SpeedLine,SUV,"Mitsubishi Pajero, Toyota Rush",71.29
+P0042,TorqueX Batteries 105,Batteries,Economy,Lithium,TorqueX,Crossover,Honda HR-V,232.57
+P0116,TorqueX Batteries 454,Batteries,Economy,Lithium,TorqueX,Crossover,"Honda HR-V, Nissan Juke",135.04
+P0094,TorqueX Batteries 590,Batteries,Standard,Lithium,TorqueX,SUV,"Mitsubishi Pajero, Honda CR-V",139.38
+P0013,TorqueX Batteries 707,Batteries,Premium,Lithium,TorqueX,Crossover,Toyota CH-R,343.94
+P0038,TorqueX Batteries 828,Batteries,Economy,Lithium,TorqueX,SUV,"Honda CR-V, Mitsubishi Pajero",468.13
+P0063,TorqueX Batteries 911,Batteries,Premium,Lithium,TorqueX,MPV,Toyota Avanza,492.79
+P0054,AutoMax Oil 181,Oil,Economy,Mineral Oil,AutoMax,Crossover,Toyota CH-R,170.79
+P0009,AutoMax Oil 858,Oil,Standard,Mineral Oil,AutoMax,Sedan,Hyundai Elantra,48.75
+P0182,DriveWell Oil 383,Oil,Premium,Mineral Oil,DriveWell,SUV,Mitsubishi Pajero,460.6
+P0153,DriveWell Oil 411,Oil,Economy,Mineral Oil,DriveWell,MPV,Suzuki Ertiga,66.88
+P0085,DriveWell Oil 477,Oil,Premium,Mineral Oil,DriveWell,MPV,"Mitsubishi Xpander, Daihatsu Xenia",410.64
+P0156,DriveWell Oil 502,Oil,Standard,Mineral Oil,DriveWell,Sedan,"Hyundai Elantra, Toyota Vios",411.0
+P0069,DriveWell Oil 694,Oil,Economy,Mineral Oil,DriveWell,MPV,Daihatsu Xenia,302.03
+P0105,DriveWell Oil 809,Oil,Standard,Mineral Oil,DriveWell,MPV,Mitsubishi Xpander,332.04
+P0011,DriveWell Oil 872,Oil,Premium,Mineral Oil,DriveWell,MPV,Toyota Avanza,90.46
+P0138,DriveWell Oil 968,Oil,Standard,Mineral Oil,DriveWell,Sedan,Mazda 3,346.76
+P0072,SpeedLine Oil 161,Oil,Premium,Mineral Oil,SpeedLine,Sedan,"Mazda 3, Toyota Vios",50.39
+P0001,SpeedLine Oil 201,Oil,Premium,Mineral Oil,SpeedLine,MPV,"Suzuki Ertiga, Mitsubishi Xpander",308.63
+P0128,SpeedLine Oil 609,Oil,Standard,Mineral Oil,SpeedLine,MPV,"Mitsubishi Xpander, Daihatsu Xenia",189.43
+P0055,TorqueX Oil 557,Oil,Premium,Mineral Oil,TorqueX,Crossover,"Hyundai Kona, Toyota CH-R",230.3
+P0187,TorqueX Oil 798,Oil,Standard,Mineral Oil,TorqueX,MPV,Suzuki Ertiga,397.33
+P0021,AutoMax Accessories 878,Accessories,Economy,Plastic,AutoMax,Sedan,"Toyota Vios, Honda Civic",307.16
+P0103,DriveWell Accessories 197,Accessories,Economy,Plastic,DriveWell,Crossover,"Toyota CH-R, Nissan Juke",209.4
+P0161,DriveWell Accessories 200,Accessories,Standard,Plastic,DriveWell,SUV,"Honda CR-V, Daihatsu Terios",66.38
+P0010,DriveWell Accessories 478,Accessories,Economy,Plastic,DriveWell,Sedan,"Hyundai Elantra, Toyota Vios",180.33
+P0183,GearPro Accessories 245,Accessories,Economy,Plastic,GearPro,Sedan,"Toyota Vios, Mazda 3",205.46
+P0097,GearPro Accessories 999,Accessories,Standard,Plastic,GearPro,SUV,Mitsubishi Pajero,331.65
+P0022,SpeedLine Accessories 550,Accessories,Economy,Plastic,SpeedLine,Crossover,"Toyota CH-R, Honda HR-V",168.33
+P0035,SpeedLine Accessories 554,Accessories,Premium,Plastic,SpeedLine,SUV,"Honda CR-V, Mitsubishi Pajero",364.0
+P0002,SpeedLine Accessories 564,Accessories,Economy,Plastic,SpeedLine,Crossover,Honda HR-V,179.38
+P0198,SpeedLine Accessories 708,Accessories,Economy,Plastic,SpeedLine,Crossover,Hyundai Kona,257.3
+P0155,TorqueX Accessories 507,Accessories,Premium,Plastic,TorqueX,Hatchback,Mazda 2,167.38
+P0143,TorqueX Accessories 653,Accessories,Standard,Plastic,TorqueX,Sedan,Hyundai Elantra,343.36
+P0030,TorqueX Accessories 771,Accessories,Premium,Plastic,TorqueX,SUV,Honda CR-V,165.46
+P0140,AutoMax Tires 197,Tires,Premium,Rubber,AutoMax,Crossover,"Toyota CH-R, Honda HR-V",489.0
+P0139,AutoMax Tires 752,Tires,Premium,Rubber,AutoMax,Crossover,"Honda HR-V, Toyota CH-R",245.86
+P0193,AutoMax Tires 932,Tires,Premium,Rubber,AutoMax,Hatchback,"Suzuki Swift, Toyota Yaris",200.62
+P0169,DriveWell Tires 368,Tires,Premium,Rubber,DriveWell,Sedan,"Mazda 3, Honda Civic",236.91
+P0188,SpeedLine Tires 100,Tires,Economy,Rubber,SpeedLine,SUV,Daihatsu Terios,229.02
+P0047,SpeedLine Tires 359,Tires,Premium,Rubber,SpeedLine,Crossover,Honda HR-V,490.8
+P0191,SpeedLine Tires 555,Tires,Economy,Rubber,SpeedLine,SUV,Daihatsu Terios,266.93
+P0121,SpeedLine Tires 787,Tires,Premium,Rubber,SpeedLine,MPV,"Toyota Avanza, Daihatsu Xenia",471.67
+P0060,SpeedLine Tires 820,Tires,Economy,Rubber,SpeedLine,MPV,"Toyota Avanza, Daihatsu Xenia",390.86
+P0018,TorqueX Tires 208,Tires,Standard,Rubber,TorqueX,Sedan,"Mazda 3, Honda Civic",226.81
+P0034,TorqueX Tires 285,Tires,Premium,Rubber,TorqueX,MPV,Suzuki Ertiga,89.81
+P0199,TorqueX Tires 682,Tires,Premium,Rubber,TorqueX,Hatchback,Mazda 2,432.49
+P0088,AutoMax Shock Absorber 421,Shock Absorber,Economy,Steel,AutoMax,MPV,Daihatsu Xenia,24.18
+P0004,AutoMax Shock Absorber 931,Shock Absorber,Economy,Steel,AutoMax,SUV,"Toyota Rush, Honda CR-V",373.32
+P0024,AutoMax Shock Absorber 975,Shock Absorber,Standard,Steel,AutoMax,Hatchback,"Toyota Yaris, Suzuki Swift",434.16
+P0083,AutoMax Spare Parts 720,Spare Parts,Economy,Steel,AutoMax,Sedan,"Hyundai Elantra, Mazda 3",236.64
+P0087,AutoMax Spare Parts 734,Spare Parts,Premium,Steel,AutoMax,MPV,"Daihatsu Xenia, Mitsubishi Xpander",320.08
+P0146,DriveWell Shock Absorber 830,Shock Absorber,Standard,Steel,DriveWell,Crossover,Toyota CH-R,402.06
+P0045,DriveWell Spare Parts 101,Spare Parts,Premium,Steel,DriveWell,MPV,Daihatsu Xenia,156.27
+P0046,DriveWell Spare Parts 469,Spare Parts,Standard,Steel,DriveWell,Crossover,Nissan Juke,268.89
+P0071,DriveWell Spare Parts 658,Spare Parts,Standard,Steel,DriveWell,Crossover,Honda HR-V,446.16
+P0050,GearPro Shock Absorber 910,Shock Absorber,Premium,Steel,GearPro,SUV,"Toyota Rush, Daihatsu Terios",112.77
+P0099,GearPro Spare Parts 506,Spare Parts,Premium,Steel,GearPro,Crossover,Nissan Juke,498.63
+P0076,GearPro Spare Parts 627,Spare Parts,Standard,Steel,GearPro,Hatchback,"Honda Jazz, Toyota Yaris",256.66
+P0123,GearPro Spare Parts 675,Spare Parts,Standard,Steel,GearPro,Hatchback,Mazda 2,458.65
+P0119,GearPro Spare Parts 691,Spare Parts,Economy,Steel,GearPro,MPV,"Daihatsu Xenia, Mitsubishi Xpander",294.41
+P0110,GearPro Spare Parts 697,Spare Parts,Economy,Steel,GearPro,Hatchback,"Toyota Yaris, Suzuki Swift",114.62
+P0141,GearPro Spare Parts 800,Spare Parts,Economy,Steel,GearPro,MPV,"Mitsubishi Xpander, Toyota Avanza",463.22
+P0200,SpeedLine Shock Absorber 320,Shock Absorber,Standard,Steel,SpeedLine,SUV,Toyota Rush,21.69
+P0124,SpeedLine Shock Absorber 560,Shock Absorber,Standard,Steel,SpeedLine,Sedan,"Toyota Vios, Hyundai Elantra",328.65
+P0131,SpeedLine Shock Absorber 757,Shock Absorber,Premium,Steel,SpeedLine,MPV,"Mitsubishi Xpander, Daihatsu Xenia",483.76
+P0081,SpeedLine Spare Parts 221,Spare Parts,Standard,Steel,SpeedLine,MPV,"Mitsubishi Xpander, Suzuki Ertiga",344.99
+P0126,SpeedLine Spare Parts 294,Spare Parts,Premium,Steel,SpeedLine,Sedan,"Mazda 3, Honda Civic",117.73
+P0189,TorqueX Shock Absorber 184,Shock Absorber,Economy,Steel,TorqueX,Sedan,"Honda Civic, Mazda 3",189.81
+P0006,TorqueX Shock Absorber 317,Shock Absorber,Premium,Steel,TorqueX,MPV,"Mitsubishi Xpander, Toyota Avanza",295.29
+P0098,TorqueX Shock Absorber 337,Shock Absorber,Standard,Steel,TorqueX,Hatchback,"Toyota Yaris, Mazda 2",331.36
+P0003,TorqueX Shock Absorber 803,Shock Absorber,Standard,Steel,TorqueX,Crossover,"Toyota CH-R, Hyundai Kona",477.49
+P0115,TorqueX Shock Absorber 845,Shock Absorber,Economy,Steel,TorqueX,SUV,Mitsubishi Pajero,271.49
+P0012,TorqueX Spare Parts 379,Spare Parts,Economy,Steel,TorqueX,Crossover,"Honda HR-V, Toyota CH-R",229.39
+P0028,TorqueX Spare Parts 795,Spare Parts,Premium,Steel,TorqueX,Hatchback,"Mazda 2, Honda Jazz",390.62
+P0190,AutoMax Oil 820,Oil,Premium,Synthetic Oil,AutoMax,Crossover,"Hyundai Kona, Honda HR-V",332.91
+P0125,AutoMax Oil 879,Oil,Economy,Synthetic Oil,AutoMax,Hatchback,"Toyota Yaris, Mazda 2",106.26
+P0057,AutoMax Oil 897,Oil,Premium,Synthetic Oil,AutoMax,Sedan,"Honda Civic, Hyundai Elantra",47.61
+P0144,AutoMax Oil 958,Oil,Standard,Synthetic Oil,AutoMax,MPV,"Toyota Avanza, Suzuki Ertiga",226.99
+P0059,DriveWell Oil 355,Oil,Standard,Synthetic Oil,DriveWell,Sedan,"Hyundai Elantra, Toyota Vios",330.04
+P0027,DriveWell Oil 549,Oil,Premium,Synthetic Oil,DriveWell,Sedan,Toyota Vios,358.2
+P0157,DriveWell Oil 572,Oil,Economy,Synthetic Oil,DriveWell,MPV,Toyota Avanza,477.21
+P0166,GearPro Oil 536,Oil,Premium,Synthetic Oil,GearPro,Sedan,Toyota Vios,175.53
+P0142,GearPro Oil 870,Oil,Premium,Synthetic Oil,GearPro,Hatchback,Honda Jazz,299.71
+P0033,GearPro Oil 907,Oil,Standard,Synthetic Oil,GearPro,Sedan,Honda Civic,158.46
+P0075,GearPro Oil 984,Oil,Standard,Synthetic Oil,GearPro,SUV,Honda CR-V,473.51
+P0032,SpeedLine Oil 319,Oil,Economy,Synthetic Oil,SpeedLine,MPV,"Toyota Avanza, Daihatsu Xenia",164.8
+P0159,SpeedLine Oil 590,Oil,Premium,Synthetic Oil,SpeedLine,Crossover,Honda HR-V,495.49
+P0162,SpeedLine Oil 612,Oil,Economy,Synthetic Oil,SpeedLine,Hatchback,"Mazda 2, Suzuki Swift",300.47
+P0086,SpeedLine Oil 771,Oil,Premium,Synthetic Oil,SpeedLine,MPV,"Toyota Avanza, Mitsubishi Xpander",245.18
+P0178,SpeedLine Oil 949,Oil,Premium,Synthetic Oil,SpeedLine,MPV,Suzuki Ertiga,64.67
+P0172,TorqueX Oil 492,Oil,Economy,Synthetic Oil,TorqueX,Sedan,"Hyundai Elantra, Mazda 3",81.87
+P0107,TorqueX Oil 589,Oil,Premium,Synthetic Oil,TorqueX,Hatchback,Honda Jazz,479.32
+P0174,TorqueX Oil 675,Oil,Standard,Synthetic Oil,TorqueX,SUV,"Daihatsu Terios, Toyota Rush",410.38
+P0049,TorqueX Oil 812,Oil,Economy,Synthetic Oil,TorqueX,MPV,"Daihatsu Xenia, Mitsubishi Xpander",240.34
+P0192,AutoMax Tires 492,Tires,Economy,Synthetic Rubber,AutoMax,Crossover,Honda HR-V,49.35
+P0176,AutoMax Tires 568,Tires,Economy,Synthetic Rubber,AutoMax,Hatchback,Suzuki Swift,96.58
+P0113,AutoMax Tires 583,Tires,Standard,Synthetic Rubber,AutoMax,MPV,Toyota Avanza,493.28
+P0056,DriveWell Tires 515,Tires,Premium,Synthetic Rubber,DriveWell,Crossover,"Nissan Juke, Honda HR-V",340.52
+P0044,DriveWell Tires 611,Tires,Economy,Synthetic Rubber,DriveWell,Crossover,Nissan Juke,420.79
+P0109,DriveWell Tires 660,Tires,Premium,Synthetic Rubber,DriveWell,Hatchback,Toyota Yaris,44.95
+P0154,DriveWell Tires 943,Tires,Standard,Synthetic Rubber,DriveWell,Crossover,"Honda HR-V, Hyundai Kona",223.85
+P0147,GearPro Tires 209,Tires,Economy,Synthetic Rubber,GearPro,Crossover,Honda HR-V,168.59
+P0043,GearPro Tires 224,Tires,Economy,Synthetic Rubber,GearPro,Sedan,"Honda Civic, Toyota Vios",130.26
+P0114,GearPro Tires 486,Tires,Standard,Synthetic Rubber,GearPro,Sedan,"Mazda 3, Toyota Vios",232.54
+P0065,SpeedLine Tires 424,Tires,Standard,Synthetic Rubber,SpeedLine,MPV,"Suzuki Ertiga, Mitsubishi Xpander",50.77
+P0148,SpeedLine Tires 541,Tires,Economy,Synthetic Rubber,SpeedLine,Hatchback,"Toyota Yaris, Mazda 2",57.34
+P0135,SpeedLine Tires 642,Tires,Premium,Synthetic Rubber,SpeedLine,SUV,Mitsubishi Pajero,20.75
+P0025,SpeedLine Tires 685,Tires,Premium,Synthetic Rubber,SpeedLine,MPV,Suzuki Ertiga,455.89
+P0196,TorqueX Tires 186,Tires,Premium,Synthetic Rubber,TorqueX,Crossover,"Hyundai Kona, Nissan Juke",149.33
+P0040,TorqueX Tires 341,Tires,Economy,Synthetic Rubber,TorqueX,SUV,"Toyota Rush, Daihatsu Terios",258.47
+P0023,TorqueX Tires 417,Tires,Standard,Synthetic Rubber,TorqueX,Hatchback,Suzuki Swift,261.06
+P0145,TorqueX Tires 666,Tires,Standard,Synthetic Rubber,TorqueX,SUV,"Mitsubishi Pajero, Daihatsu Terios",125.65
+P0185,TorqueX Tires 892,Tires,Standard,Synthetic Rubber,TorqueX,Crossover,"Toyota CH-R, Honda HR-V",16.2

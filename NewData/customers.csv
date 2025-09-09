@@ -1,501 +1,301 @@
-customer_id,customer_name,age,gender,city,vehicle_owned,vehicle_type
-CUST00011,Customer_11,38,Male,Bandung,Daihatsu Terios,SUV
-CUST00014,Customer_14,54,Male,Bandung,Daihatsu Terios,SUV
-CUST00416,Customer_416,54,Male,Bandung,Daihatsu Terios,SUV
-CUST00445,Customer_445,42,Male,Bandung,Daihatsu Terios,SUV
-CUST00281,Customer_281,60,Female,Bandung,Daihatsu Xenia,MPV
-CUST00352,Customer_352,39,Male,Bandung,Daihatsu Xenia,MPV
-CUST00362,Customer_362,25,Female,Bandung,Daihatsu Xenia,MPV
-CUST00410,Customer_410,55,Female,Bandung,Daihatsu Xenia,MPV
-CUST00455,Customer_455,35,Female,Bandung,Daihatsu Xenia,MPV
-CUST00044,Customer_44,54,Female,Bandung,Honda Accord,Sedan
-CUST00075,Customer_75,46,Male,Bandung,Honda Accord,Sedan
-CUST00105,Customer_105,44,Male,Bandung,Honda Accord,Sedan
-CUST00425,Customer_425,50,Female,Bandung,Honda Accord,Sedan
-CUST00027,Customer_27,60,Male,Bandung,Honda CR-V,SUV
-CUST00211,Customer_211,40,Female,Bandung,Honda CR-V,SUV
-CUST00327,Customer_327,54,Female,Bandung,Honda CR-V,SUV
-CUST00500,Customer_500,48,Female,Bandung,Honda CR-V,SUV
-CUST00045,Customer_45,37,Female,Bandung,Honda HR-V,Crossover
-CUST00051,Customer_51,32,Female,Bandung,Honda HR-V,Crossover
-CUST00200,Customer_200,51,Male,Bandung,Honda HR-V,Crossover
-CUST00298,Customer_298,34,Male,Bandung,Honda HR-V,Crossover
-CUST00460,Customer_460,54,Female,Bandung,Honda HR-V,Crossover
-CUST00477,Customer_477,42,Male,Bandung,Honda HR-V,Crossover
-CUST00017,Customer_17,33,Female,Bandung,Honda Jazz,Hatchback
-CUST00498,Customer_498,26,Female,Bandung,Honda Jazz,Hatchback
-CUST00076,Customer_76,35,Female,Bandung,Mazda 2,Hatchback
-CUST00188,Customer_188,44,Female,Bandung,Mazda 2,Hatchback
-CUST00210,Customer_210,22,Female,Bandung,Mazda 2,Hatchback
-CUST00321,Customer_321,20,Female,Bandung,Mazda 2,Hatchback
-CUST00346,Customer_346,40,Female,Bandung,Mazda 2,Hatchback
-CUST00006,Customer_6,41,Female,Bandung,Mazda 6,Sedan
-CUST00078,Customer_78,42,Female,Bandung,Mazda 6,Sedan
-CUST00317,Customer_317,27,Female,Bandung,Mazda 6,Sedan
-CUST00020,Customer_20,43,Male,Bandung,Mazda CX-3,Crossover
-CUST00091,Customer_91,33,Female,Bandung,Mazda CX-3,Crossover
-CUST00158,Customer_158,38,Male,Bandung,Mazda CX-3,Crossover
-CUST00328,Customer_328,60,Male,Bandung,Mazda CX-3,Crossover
-CUST00334,Customer_334,44,Female,Bandung,Mazda CX-3,Crossover
-CUST00043,Customer_43,41,Male,Bandung,Mitsubishi Pajero,SUV
-CUST00077,Customer_77,22,Female,Bandung,Mitsubishi Pajero,SUV
-CUST00248,Customer_248,26,Female,Bandung,Mitsubishi Pajero,SUV
-CUST00268,Customer_268,47,Male,Bandung,Mitsubishi Pajero,SUV
-CUST00329,Customer_329,22,Female,Bandung,Mitsubishi Pajero,SUV
-CUST00398,Customer_398,40,Female,Bandung,Mitsubishi Pajero,SUV
-CUST00440,Customer_440,36,Male,Bandung,Mitsubishi Pajero,SUV
-CUST00450,Customer_450,59,Male,Bandung,Mitsubishi Pajero,SUV
-CUST00074,Customer_74,59,Male,Bandung,Mitsubishi Xpander,MPV
-CUST00100,Customer_100,55,Female,Bandung,Mitsubishi Xpander,MPV
-CUST00186,Customer_186,49,Female,Bandung,Mitsubishi Xpander,MPV
-CUST00357,Customer_357,46,Male,Bandung,Mitsubishi Xpander,MPV
-CUST00396,Customer_396,30,Female,Bandung,Mitsubishi Xpander,MPV
-CUST00407,Customer_407,45,Female,Bandung,Mitsubishi Xpander,MPV
-CUST00446,Customer_446,53,Male,Bandung,Mitsubishi Xpander,MPV
-CUST00474,Customer_474,38,Male,Bandung,Mitsubishi Xpander,MPV
-CUST00003,Customer_3,21,Male,Bandung,Nissan Juke,Crossover
-CUST00490,Customer_490,60,Male,Bandung,Nissan Juke,Crossover
-CUST00093,Customer_93,34,Male,Bandung,Nissan Teana,Sedan
-CUST00156,Customer_156,25,Male,Bandung,Nissan Teana,Sedan
-CUST00294,Customer_294,39,Female,Bandung,Nissan Teana,Sedan
-CUST00252,Customer_252,29,Female,Bandung,Suzuki Ertiga,MPV
-CUST00300,Customer_300,58,Female,Bandung,Suzuki Ertiga,MPV
-CUST00435,Customer_435,56,Male,Bandung,Suzuki Ertiga,MPV
-CUST00104,Customer_104,54,Male,Bandung,Suzuki Swift,Hatchback
-CUST00159,Customer_159,49,Male,Bandung,Suzuki Swift,Hatchback
-CUST00184,Customer_184,57,Female,Bandung,Suzuki Swift,Hatchback
-CUST00256,Customer_256,20,Male,Bandung,Suzuki Swift,Hatchback
-CUST00276,Customer_276,34,Female,Bandung,Suzuki Swift,Hatchback
-CUST00338,Customer_338,48,Female,Bandung,Suzuki Swift,Hatchback
-CUST00387,Customer_387,55,Female,Bandung,Suzuki Swift,Hatchback
-CUST00430,Customer_430,59,Male,Bandung,Suzuki Swift,Hatchback
-CUST00484,Customer_484,21,Female,Bandung,Suzuki Swift,Hatchback
-CUST00047,Customer_47,25,Male,Bandung,Toyota Avanza,MPV
-CUST00155,Customer_155,59,Male,Bandung,Toyota Avanza,MPV
-CUST00229,Customer_229,23,Female,Bandung,Toyota Avanza,MPV
-CUST00260,Customer_260,23,Male,Bandung,Toyota Avanza,MPV
-CUST00320,Customer_320,60,Male,Bandung,Toyota Avanza,MPV
-CUST00128,Customer_128,60,Female,Bandung,Toyota C-HR,Crossover
-CUST00141,Customer_141,39,Female,Bandung,Toyota C-HR,Crossover
-CUST00208,Customer_208,34,Female,Bandung,Toyota C-HR,Crossover
-CUST00220,Customer_220,46,Male,Bandung,Toyota C-HR,Crossover
-CUST00225,Customer_225,22,Female,Bandung,Toyota C-HR,Crossover
-CUST00409,Customer_409,50,Male,Bandung,Toyota C-HR,Crossover
-CUST00179,Customer_179,49,Male,Bandung,Toyota Camry,Sedan
-CUST00228,Customer_228,49,Male,Bandung,Toyota Camry,Sedan
-CUST00326,Customer_326,57,Female,Bandung,Toyota Camry,Sedan
-CUST00397,Customer_397,56,Male,Bandung,Toyota Camry,Sedan
-CUST00001,Customer_1,37,Male,Bandung,Toyota Rush,SUV
-CUST00177,Customer_177,60,Male,Bandung,Toyota Rush,SUV
-CUST00194,Customer_194,35,Female,Bandung,Toyota Rush,SUV
-CUST00266,Customer_266,33,Female,Bandung,Toyota Rush,SUV
-CUST00316,Customer_316,21,Female,Bandung,Toyota Rush,SUV
-CUST00379,Customer_379,45,Female,Bandung,Toyota Rush,SUV
-CUST00485,Customer_485,53,Male,Bandung,Toyota Rush,SUV
-CUST00061,Customer_61,42,Male,Bandung,Toyota Yaris,Hatchback
-CUST00233,Customer_233,27,Male,Bandung,Toyota Yaris,Hatchback
-CUST00278,Customer_278,35,Male,Bandung,Toyota Yaris,Hatchback
-CUST00353,Customer_353,27,Male,Bandung,Toyota Yaris,Hatchback
-CUST00359,Customer_359,55,Male,Bandung,Toyota Yaris,Hatchback
-CUST00055,Customer_55,45,Male,Denpasar,Daihatsu Terios,SUV
-CUST00119,Customer_119,32,Male,Denpasar,Daihatsu Terios,SUV
-CUST00142,Customer_142,40,Male,Denpasar,Daihatsu Terios,SUV
-CUST00174,Customer_174,53,Female,Denpasar,Daihatsu Terios,SUV
-CUST00218,Customer_218,50,Male,Denpasar,Daihatsu Terios,SUV
-CUST00309,Customer_309,37,Female,Denpasar,Daihatsu Terios,SUV
-CUST00389,Customer_389,41,Female,Denpasar,Daihatsu Terios,SUV
-CUST00411,Customer_411,35,Male,Denpasar,Daihatsu Terios,SUV
-CUST00457,Customer_457,60,Female,Denpasar,Daihatsu Terios,SUV
-CUST00135,Customer_135,55,Male,Denpasar,Daihatsu Xenia,MPV
-CUST00251,Customer_251,42,Male,Denpasar,Daihatsu Xenia,MPV
-CUST00303,Customer_303,48,Male,Denpasar,Daihatsu Xenia,MPV
-CUST00355,Customer_355,49,Male,Denpasar,Daihatsu Xenia,MPV
-CUST00363,Customer_363,28,Female,Denpasar,Daihatsu Xenia,MPV
-CUST00391,Customer_391,30,Female,Denpasar,Daihatsu Xenia,MPV
-CUST00406,Customer_406,38,Male,Denpasar,Daihatsu Xenia,MPV
-CUST00019,Customer_19,55,Female,Denpasar,Honda Accord,Sedan
-CUST00198,Customer_198,53,Female,Denpasar,Honda Accord,Sedan
-CUST00199,Customer_199,31,Male,Denpasar,Honda Accord,Sedan
-CUST00212,Customer_212,54,Female,Denpasar,Honda Accord,Sedan
-CUST00230,Customer_230,24,Male,Denpasar,Honda Accord,Sedan
-CUST00231,Customer_231,41,Male,Denpasar,Honda Accord,Sedan
-CUST00433,Customer_433,58,Male,Denpasar,Honda Accord,Sedan
-CUST00496,Customer_496,56,Female,Denpasar,Honda Accord,Sedan
-CUST00026,Customer_26,52,Male,Denpasar,Honda CR-V,SUV
-CUST00232,Customer_232,29,Male,Denpasar,Honda CR-V,SUV
-CUST00271,Customer_271,56,Female,Denpasar,Honda CR-V,SUV
-CUST00351,Customer_351,42,Male,Denpasar,Honda CR-V,SUV
-CUST00487,Customer_487,45,Female,Denpasar,Honda CR-V,SUV
-CUST00039,Customer_39,54,Male,Denpasar,Honda HR-V,Crossover
-CUST00112,Customer_112,49,Male,Denpasar,Honda HR-V,Crossover
-CUST00129,Customer_129,53,Female,Denpasar,Honda HR-V,Crossover
-CUST00315,Customer_315,50,Female,Denpasar,Honda HR-V,Crossover
-CUST00080,Customer_80,37,Female,Denpasar,Honda Jazz,Hatchback
-CUST00117,Customer_117,50,Male,Denpasar,Honda Jazz,Hatchback
-CUST00152,Customer_152,35,Male,Denpasar,Honda Jazz,Hatchback
-CUST00207,Customer_207,56,Male,Denpasar,Honda Jazz,Hatchback
-CUST00237,Customer_237,48,Male,Denpasar,Honda Jazz,Hatchback
-CUST00265,Customer_265,34,Female,Denpasar,Honda Jazz,Hatchback
-CUST00358,Customer_358,48,Female,Denpasar,Honda Jazz,Hatchback
-CUST00383,Customer_383,45,Male,Denpasar,Honda Jazz,Hatchback
-CUST00050,Customer_50,38,Female,Denpasar,Mazda 2,Hatchback
-CUST00193,Customer_193,40,Female,Denpasar,Mazda 2,Hatchback
-CUST00432,Customer_432,55,Female,Denpasar,Mazda 2,Hatchback
-CUST00436,Customer_436,27,Male,Denpasar,Mazda 2,Hatchback
-CUST00497,Customer_497,28,Male,Denpasar,Mazda 2,Hatchback
-CUST00069,Customer_69,55,Female,Denpasar,Mazda 6,Sedan
-CUST00224,Customer_224,26,Female,Denpasar,Mazda 6,Sedan
-CUST00280,Customer_280,49,Female,Denpasar,Mazda 6,Sedan
-CUST00354,Customer_354,21,Female,Denpasar,Mazda 6,Sedan
-CUST00431,Customer_431,29,Female,Denpasar,Mazda 6,Sedan
-CUST00481,Customer_481,43,Male,Denpasar,Mazda 6,Sedan
-CUST00023,Customer_23,53,Female,Denpasar,Mazda CX-3,Crossover
-CUST00181,Customer_181,35,Female,Denpasar,Mazda CX-3,Crossover
-CUST00185,Customer_185,42,Female,Denpasar,Mazda CX-3,Crossover
-CUST00371,Customer_371,33,Female,Denpasar,Mazda CX-3,Crossover
-CUST00385,Customer_385,55,Female,Denpasar,Mazda CX-3,Crossover
-CUST00097,Customer_97,34,Male,Denpasar,Mitsubishi Pajero,SUV
-CUST00106,Customer_106,46,Female,Denpasar,Mitsubishi Pajero,SUV
-CUST00489,Customer_489,44,Female,Denpasar,Mitsubishi Pajero,SUV
-CUST00491,Customer_491,47,Female,Denpasar,Mitsubishi Pajero,SUV
-CUST00126,Customer_126,43,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00130,Customer_130,49,Female,Denpasar,Mitsubishi Xpander,MPV
-CUST00164,Customer_164,48,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00243,Customer_243,26,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00306,Customer_306,30,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00322,Customer_322,31,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00478,Customer_478,31,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00483,Customer_483,20,Male,Denpasar,Mitsubishi Xpander,MPV
-CUST00009,Customer_9,44,Male,Denpasar,Nissan Juke,Crossover
-CUST00205,Customer_205,35,Female,Denpasar,Nissan Juke,Crossover
-CUST00240,Customer_240,25,Female,Denpasar,Nissan Juke,Crossover
-CUST00264,Customer_264,38,Female,Denpasar,Nissan Juke,Crossover
-CUST00288,Customer_288,41,Male,Denpasar,Nissan Juke,Crossover
-CUST00336,Customer_336,47,Male,Denpasar,Nissan Juke,Crossover
-CUST00345,Customer_345,56,Male,Denpasar,Nissan Juke,Crossover
-CUST00458,Customer_458,42,Female,Denpasar,Nissan Juke,Crossover
-CUST00064,Customer_64,27,Male,Denpasar,Nissan Teana,Sedan
-CUST00082,Customer_82,22,Male,Denpasar,Nissan Teana,Sedan
-CUST00343,Customer_343,43,Female,Denpasar,Nissan Teana,Sedan
-CUST00454,Customer_454,34,Female,Denpasar,Nissan Teana,Sedan
-CUST00365,Customer_365,30,Female,Denpasar,Suzuki Ertiga,MPV
-CUST00062,Customer_62,30,Female,Denpasar,Suzuki Swift,Hatchback
-CUST00392,Customer_392,52,Female,Denpasar,Suzuki Swift,Hatchback
-CUST00054,Customer_54,31,Male,Denpasar,Toyota Avanza,MPV
-CUST00060,Customer_60,24,Male,Denpasar,Toyota Avanza,MPV
-CUST00151,Customer_151,29,Male,Denpasar,Toyota Avanza,MPV
-CUST00167,Customer_167,31,Female,Denpasar,Toyota Avanza,MPV
-CUST00364,Customer_364,52,Male,Denpasar,Toyota Avanza,MPV
-CUST00083,Customer_83,40,Female,Denpasar,Toyota C-HR,Crossover
-CUST00223,Customer_223,54,Female,Denpasar,Toyota C-HR,Crossover
-CUST00002,Customer_2,54,Male,Denpasar,Toyota Camry,Sedan
-CUST00004,Customer_4,55,Male,Denpasar,Toyota Camry,Sedan
-CUST00241,Customer_241,28,Female,Denpasar,Toyota Camry,Sedan
-CUST00031,Customer_31,51,Male,Denpasar,Toyota Rush,SUV
-CUST00070,Customer_70,24,Male,Denpasar,Toyota Rush,SUV
-CUST00094,Customer_94,35,Female,Denpasar,Toyota Rush,SUV
-CUST00347,Customer_347,31,Female,Denpasar,Toyota Rush,SUV
-CUST00366,Customer_366,25,Male,Denpasar,Toyota Rush,SUV
-CUST00447,Customer_447,39,Female,Denpasar,Toyota Rush,SUV
-CUST00492,Customer_492,34,Male,Denpasar,Toyota Rush,SUV
-CUST00028,Customer_28,54,Male,Denpasar,Toyota Yaris,Hatchback
-CUST00030,Customer_30,23,Male,Denpasar,Toyota Yaris,Hatchback
-CUST00160,Customer_160,47,Male,Denpasar,Toyota Yaris,Hatchback
-CUST00254,Customer_254,47,Male,Denpasar,Toyota Yaris,Hatchback
-CUST00293,Customer_293,41,Male,Denpasar,Toyota Yaris,Hatchback
-CUST00367,Customer_367,56,Female,Denpasar,Toyota Yaris,Hatchback
-CUST00332,Customer_332,38,Female,Jakarta,Daihatsu Terios,SUV
-CUST00147,Customer_147,28,Female,Jakarta,Daihatsu Xenia,MPV
-CUST00219,Customer_219,59,Male,Jakarta,Daihatsu Xenia,MPV
-CUST00312,Customer_312,35,Female,Jakarta,Daihatsu Xenia,MPV
-CUST00424,Customer_424,25,Female,Jakarta,Daihatsu Xenia,MPV
-CUST00035,Customer_35,24,Female,Jakarta,Honda Accord,Sedan
-CUST00120,Customer_120,28,Female,Jakarta,Honda Accord,Sedan
-CUST00161,Customer_161,37,Male,Jakarta,Honda Accord,Sedan
-CUST00215,Customer_215,45,Female,Jakarta,Honda Accord,Sedan
-CUST00480,Customer_480,24,Male,Jakarta,Honda Accord,Sedan
-CUST00488,Customer_488,39,Male,Jakarta,Honda Accord,Sedan
-CUST00008,Customer_8,42,Female,Jakarta,Honda CR-V,SUV
-CUST00092,Customer_92,52,Female,Jakarta,Honda CR-V,SUV
-CUST00118,Customer_118,34,Male,Jakarta,Honda CR-V,SUV
-CUST00172,Customer_172,36,Female,Jakarta,Honda CR-V,SUV
-CUST00234,Customer_234,35,Female,Jakarta,Honda CR-V,SUV
-CUST00238,Customer_238,49,Male,Jakarta,Honda CR-V,SUV
-CUST00253,Customer_253,55,Female,Jakarta,Honda CR-V,SUV
-CUST00005,Customer_5,48,Female,Jakarta,Honda HR-V,Crossover
-CUST00114,Customer_114,49,Male,Jakarta,Honda HR-V,Crossover
-CUST00269,Customer_269,52,Female,Jakarta,Honda HR-V,Crossover
-CUST00399,Customer_399,46,Female,Jakarta,Honda HR-V,Crossover
-CUST00453,Customer_453,54,Male,Jakarta,Honda HR-V,Crossover
-CUST00063,Customer_63,55,Female,Jakarta,Honda Jazz,Hatchback
-CUST00127,Customer_127,46,Female,Jakarta,Honda Jazz,Hatchback
-CUST00178,Customer_178,55,Female,Jakarta,Honda Jazz,Hatchback
-CUST00467,Customer_467,33,Male,Jakarta,Honda Jazz,Hatchback
-CUST00183,Customer_183,41,Female,Jakarta,Mazda 2,Hatchback
-CUST00245,Customer_245,45,Female,Jakarta,Mazda 2,Hatchback
-CUST00413,Customer_413,26,Male,Jakarta,Mazda 2,Hatchback
-CUST00465,Customer_465,58,Male,Jakarta,Mazda 2,Hatchback
-CUST00182,Customer_182,32,Male,Jakarta,Mazda 6,Sedan
-CUST00187,Customer_187,34,Female,Jakarta,Mazda 6,Sedan
-CUST00247,Customer_247,24,Male,Jakarta,Mazda 6,Sedan
-CUST00342,Customer_342,22,Male,Jakarta,Mazda 6,Sedan
-CUST00388,Customer_388,52,Male,Jakarta,Mazda 6,Sedan
-CUST00042,Customer_42,49,Male,Jakarta,Mazda CX-3,Crossover
-CUST00096,Customer_96,35,Male,Jakarta,Mazda CX-3,Crossover
-CUST00226,Customer_226,35,Female,Jakarta,Mazda CX-3,Crossover
-CUST00335,Customer_335,43,Female,Jakarta,Mazda CX-3,Crossover
-CUST00381,Customer_381,38,Male,Jakarta,Mazda CX-3,Crossover
-CUST00046,Customer_46,55,Male,Jakarta,Mitsubishi Pajero,SUV
-CUST00165,Customer_165,40,Female,Jakarta,Mitsubishi Pajero,SUV
-CUST00394,Customer_394,57,Female,Jakarta,Mitsubishi Pajero,SUV
-CUST00021,Customer_21,25,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00053,Customer_53,52,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00257,Customer_257,24,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00287,Customer_287,52,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00340,Customer_340,37,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00395,Customer_395,36,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00482,Customer_482,51,Male,Jakarta,Mitsubishi Xpander,MPV
-CUST00086,Customer_86,41,Female,Jakarta,Nissan Juke,Crossover
-CUST00098,Customer_98,55,Male,Jakarta,Nissan Juke,Crossover
-CUST00189,Customer_189,28,Female,Jakarta,Nissan Juke,Crossover
-CUST00190,Customer_190,53,Female,Jakarta,Nissan Juke,Crossover
-CUST00437,Customer_437,52,Female,Jakarta,Nissan Juke,Crossover
-CUST00145,Customer_145,31,Female,Jakarta,Nissan Teana,Sedan
-CUST00209,Customer_209,28,Male,Jakarta,Nissan Teana,Sedan
-CUST00267,Customer_267,38,Female,Jakarta,Nissan Teana,Sedan
-CUST00349,Customer_349,51,Male,Jakarta,Nissan Teana,Sedan
-CUST00415,Customer_415,40,Female,Jakarta,Nissan Teana,Sedan
-CUST00461,Customer_461,29,Female,Jakarta,Nissan Teana,Sedan
-CUST00463,Customer_463,33,Female,Jakarta,Nissan Teana,Sedan
-CUST00036,Customer_36,57,Male,Jakarta,Suzuki Ertiga,MPV
-CUST00146,Customer_146,37,Male,Jakarta,Suzuki Ertiga,MPV
-CUST00384,Customer_384,43,Female,Jakarta,Suzuki Ertiga,MPV
-CUST00010,Customer_10,56,Male,Jakarta,Suzuki Swift,Hatchback
-CUST00192,Customer_192,59,Female,Jakarta,Suzuki Swift,Hatchback
-CUST00214,Customer_214,27,Female,Jakarta,Suzuki Swift,Hatchback
-CUST00113,Customer_113,45,Male,Jakarta,Toyota Avanza,MPV
-CUST00249,Customer_249,57,Female,Jakarta,Toyota Avanza,MPV
-CUST00494,Customer_494,31,Female,Jakarta,Toyota Avanza,MPV
-CUST00034,Customer_34,48,Female,Jakarta,Toyota C-HR,Crossover
-CUST00201,Customer_201,49,Female,Jakarta,Toyota C-HR,Crossover
-CUST00202,Customer_202,54,Male,Jakarta,Toyota C-HR,Crossover
-CUST00341,Customer_341,52,Male,Jakarta,Toyota C-HR,Crossover
-CUST00434,Customer_434,24,Male,Jakarta,Toyota C-HR,Crossover
-CUST00464,Customer_464,25,Male,Jakarta,Toyota C-HR,Crossover
-CUST00072,Customer_72,39,Female,Jakarta,Toyota Camry,Sedan
-CUST00122,Customer_122,30,Female,Jakarta,Toyota Camry,Sedan
-CUST00124,Customer_124,57,Male,Jakarta,Toyota Camry,Sedan
-CUST00296,Customer_296,47,Female,Jakarta,Toyota Camry,Sedan
-CUST00037,Customer_37,34,Male,Jakarta,Toyota Rush,SUV
-CUST00052,Customer_52,40,Male,Jakarta,Toyota Rush,SUV
-CUST00150,Customer_150,45,Female,Jakarta,Toyota Rush,SUV
-CUST00221,Customer_221,39,Female,Jakarta,Toyota Rush,SUV
-CUST00442,Customer_442,24,Female,Jakarta,Toyota Rush,SUV
-CUST00279,Customer_279,31,Male,Jakarta,Toyota Yaris,Hatchback
-CUST00313,Customer_313,21,Female,Jakarta,Toyota Yaris,Hatchback
-CUST00429,Customer_429,45,Female,Jakarta,Toyota Yaris,Hatchback
-CUST00449,Customer_449,37,Male,Jakarta,Toyota Yaris,Hatchback
-CUST00016,Customer_16,22,Female,Medan,Daihatsu Terios,SUV
-CUST00049,Customer_49,44,Male,Medan,Daihatsu Terios,SUV
-CUST00162,Customer_162,39,Female,Medan,Daihatsu Terios,SUV
-CUST00222,Customer_222,54,Male,Medan,Daihatsu Terios,SUV
-CUST00258,Customer_258,44,Female,Medan,Daihatsu Terios,SUV
-CUST00213,Customer_213,30,Female,Medan,Daihatsu Xenia,MPV
-CUST00242,Customer_242,44,Female,Medan,Daihatsu Xenia,MPV
-CUST00377,Customer_377,32,Male,Medan,Daihatsu Xenia,MPV
-CUST00476,Customer_476,36,Female,Medan,Daihatsu Xenia,MPV
-CUST00022,Customer_22,47,Male,Medan,Honda Accord,Sedan
-CUST00301,Customer_301,59,Male,Medan,Honda Accord,Sedan
-CUST00400,Customer_400,55,Female,Medan,Honda Accord,Sedan
-CUST00412,Customer_412,23,Male,Medan,Honda Accord,Sedan
-CUST00025,Customer_25,47,Male,Medan,Honda CR-V,SUV
-CUST00071,Customer_71,57,Male,Medan,Honda CR-V,SUV
-CUST00109,Customer_109,39,Female,Medan,Honda CR-V,SUV
-CUST00148,Customer_148,50,Female,Medan,Honda CR-V,SUV
-CUST00197,Customer_197,42,Female,Medan,Honda CR-V,SUV
-CUST00426,Customer_426,44,Male,Medan,Honda CR-V,SUV
-CUST00099,Customer_99,49,Female,Medan,Honda HR-V,Crossover
-CUST00153,Customer_153,53,Female,Medan,Honda HR-V,Crossover
-CUST00369,Customer_369,45,Female,Medan,Honda HR-V,Crossover
-CUST00382,Customer_382,36,Female,Medan,Honda HR-V,Crossover
-CUST00417,Customer_417,22,Female,Medan,Honda HR-V,Crossover
-CUST00438,Customer_438,52,Female,Medan,Honda HR-V,Crossover
-CUST00468,Customer_468,58,Male,Medan,Honda HR-V,Crossover
-CUST00170,Customer_170,30,Female,Medan,Honda Jazz,Hatchback
-CUST00285,Customer_285,25,Female,Medan,Honda Jazz,Hatchback
-CUST00311,Customer_311,46,Male,Medan,Honda Jazz,Hatchback
-CUST00318,Customer_318,23,Male,Medan,Honda Jazz,Hatchback
-CUST00323,Customer_323,53,Male,Medan,Honda Jazz,Hatchback
-CUST00115,Customer_115,40,Male,Medan,Mazda 2,Hatchback
-CUST00204,Customer_204,39,Male,Medan,Mazda 2,Hatchback
-CUST00443,Customer_443,31,Male,Medan,Mazda 2,Hatchback
-CUST00444,Customer_444,48,Female,Medan,Mazda 2,Hatchback
-CUST00191,Customer_191,29,Male,Medan,Mazda 6,Sedan
-CUST00244,Customer_244,48,Male,Medan,Mazda 6,Sedan
-CUST00310,Customer_310,25,Male,Medan,Mazda 6,Sedan
-CUST00374,Customer_374,27,Female,Medan,Mazda 6,Sedan
-CUST00048,Customer_48,50,Male,Medan,Mazda CX-3,Crossover
-CUST00107,Customer_107,23,Male,Medan,Mazda CX-3,Crossover
-CUST00239,Customer_239,47,Male,Medan,Mazda CX-3,Crossover
-CUST00262,Customer_262,58,Female,Medan,Mazda CX-3,Crossover
-CUST00272,Customer_272,38,Male,Medan,Mazda CX-3,Crossover
-CUST00448,Customer_448,34,Male,Medan,Mazda CX-3,Crossover
-CUST00095,Customer_95,46,Male,Medan,Mitsubishi Pajero,SUV
-CUST00133,Customer_133,40,Male,Medan,Mitsubishi Pajero,SUV
-CUST00195,Customer_195,26,Male,Medan,Mitsubishi Pajero,SUV
-CUST00274,Customer_274,26,Male,Medan,Mitsubishi Pajero,SUV
-CUST00302,Customer_302,43,Male,Medan,Mitsubishi Pajero,SUV
-CUST00040,Customer_40,35,Female,Medan,Mitsubishi Xpander,MPV
-CUST00275,Customer_275,53,Male,Medan,Mitsubishi Xpander,MPV
-CUST00305,Customer_305,49,Female,Medan,Mitsubishi Xpander,MPV
-CUST00319,Customer_319,24,Male,Medan,Mitsubishi Xpander,MPV
-CUST00378,Customer_378,51,Female,Medan,Mitsubishi Xpander,MPV
-CUST00401,Customer_401,40,Male,Medan,Mitsubishi Xpander,MPV
-CUST00462,Customer_462,46,Male,Medan,Mitsubishi Xpander,MPV
-CUST00471,Customer_471,49,Male,Medan,Mitsubishi Xpander,MPV
-CUST00108,Customer_108,56,Female,Medan,Nissan Juke,Crossover
-CUST00173,Customer_173,54,Female,Medan,Nissan Juke,Crossover
-CUST00216,Customer_216,36,Male,Medan,Nissan Juke,Crossover
-CUST00270,Customer_270,47,Male,Medan,Nissan Juke,Crossover
-CUST00348,Customer_348,36,Female,Medan,Nissan Juke,Crossover
-CUST00007,Customer_7,26,Male,Medan,Nissan Teana,Sedan
-CUST00139,Customer_139,57,Female,Medan,Nissan Teana,Sedan
-CUST00235,Customer_235,23,Male,Medan,Nissan Teana,Sedan
-CUST00372,Customer_372,40,Female,Medan,Nissan Teana,Sedan
-CUST00469,Customer_469,38,Female,Medan,Nissan Teana,Sedan
-CUST00486,Customer_486,42,Female,Medan,Nissan Teana,Sedan
-CUST00137,Customer_137,50,Female,Medan,Suzuki Ertiga,MPV
-CUST00176,Customer_176,38,Female,Medan,Suzuki Ertiga,MPV
-CUST00414,Customer_414,46,Female,Medan,Suzuki Ertiga,MPV
-CUST00423,Customer_423,31,Female,Medan,Suzuki Ertiga,MPV
-CUST00087,Customer_87,46,Female,Medan,Suzuki Swift,Hatchback
-CUST00116,Customer_116,44,Female,Medan,Suzuki Swift,Hatchback
-CUST00206,Customer_206,38,Male,Medan,Suzuki Swift,Hatchback
-CUST00333,Customer_333,27,Female,Medan,Suzuki Swift,Hatchback
-CUST00123,Customer_123,39,Female,Medan,Toyota Avanza,MPV
-CUST00236,Customer_236,24,Female,Medan,Toyota Avanza,MPV
-CUST00261,Customer_261,25,Female,Medan,Toyota Avanza,MPV
-CUST00386,Customer_386,28,Male,Medan,Toyota Avanza,MPV
-CUST00419,Customer_419,41,Female,Medan,Toyota Avanza,MPV
-CUST00452,Customer_452,35,Male,Medan,Toyota Avanza,MPV
-CUST00059,Customer_59,24,Male,Medan,Toyota C-HR,Crossover
-CUST00168,Customer_168,31,Female,Medan,Toyota C-HR,Crossover
-CUST00171,Customer_171,45,Male,Medan,Toyota C-HR,Crossover
-CUST00180,Customer_180,52,Female,Medan,Toyota C-HR,Crossover
-CUST00203,Customer_203,57,Female,Medan,Toyota C-HR,Crossover
-CUST00056,Customer_56,59,Male,Medan,Toyota Camry,Sedan
-CUST00136,Customer_136,35,Female,Medan,Toyota Camry,Sedan
-CUST00157,Customer_157,30,Male,Medan,Toyota Camry,Sedan
-CUST00289,Customer_289,35,Female,Medan,Toyota Camry,Sedan
-CUST00350,Customer_350,48,Male,Medan,Toyota Camry,Sedan
-CUST00421,Customer_421,41,Male,Medan,Toyota Camry,Sedan
-CUST00451,Customer_451,26,Male,Medan,Toyota Camry,Sedan
-CUST00138,Customer_138,38,Male,Medan,Toyota Rush,SUV
-CUST00356,Customer_356,39,Female,Medan,Toyota Rush,SUV
-CUST00370,Customer_370,30,Female,Medan,Toyota Rush,SUV
-CUST00479,Customer_479,23,Male,Medan,Toyota Rush,SUV
-CUST00088,Customer_88,32,Female,Medan,Toyota Yaris,Hatchback
-CUST00090,Customer_90,47,Female,Medan,Toyota Yaris,Hatchback
-CUST00149,Customer_149,23,Female,Medan,Toyota Yaris,Hatchback
-CUST00428,Customer_428,23,Male,Medan,Toyota Yaris,Hatchback
-CUST00472,Customer_472,43,Female,Medan,Toyota Yaris,Hatchback
-CUST00475,Customer_475,44,Male,Medan,Toyota Yaris,Hatchback
-CUST00166,Customer_166,56,Male,Surabaya,Daihatsu Terios,SUV
-CUST00330,Customer_330,22,Female,Surabaya,Daihatsu Terios,SUV
-CUST00344,Customer_344,48,Female,Surabaya,Daihatsu Terios,SUV
-CUST00473,Customer_473,29,Male,Surabaya,Daihatsu Terios,SUV
-CUST00057,Customer_57,36,Male,Surabaya,Daihatsu Xenia,MPV
-CUST00140,Customer_140,47,Female,Surabaya,Daihatsu Xenia,MPV
-CUST00144,Customer_144,26,Male,Surabaya,Daihatsu Xenia,MPV
-CUST00402,Customer_402,54,Female,Surabaya,Daihatsu Xenia,MPV
-CUST00404,Customer_404,34,Female,Surabaya,Daihatsu Xenia,MPV
-CUST00470,Customer_470,39,Female,Surabaya,Daihatsu Xenia,MPV
-CUST00032,Customer_32,50,Male,Surabaya,Honda Accord,Sedan
-CUST00143,Customer_143,33,Female,Surabaya,Honda Accord,Sedan
-CUST00361,Customer_361,40,Male,Surabaya,Honda Accord,Sedan
-CUST00375,Customer_375,26,Male,Surabaya,Honda Accord,Sedan
-CUST00466,Customer_466,50,Male,Surabaya,Honda Accord,Sedan
-CUST00495,Customer_495,45,Male,Surabaya,Honda Accord,Sedan
-CUST00273,Customer_273,30,Female,Surabaya,Honda CR-V,SUV
-CUST00292,Customer_292,26,Female,Surabaya,Honda CR-V,SUV
-CUST00299,Customer_299,26,Male,Surabaya,Honda CR-V,SUV
-CUST00499,Customer_499,58,Female,Surabaya,Honda CR-V,SUV
-CUST00132,Customer_132,49,Female,Surabaya,Honda HR-V,Crossover
-CUST00390,Customer_390,58,Male,Surabaya,Honda HR-V,Crossover
-CUST00038,Customer_38,52,Male,Surabaya,Honda Jazz,Hatchback
-CUST00125,Customer_125,56,Male,Surabaya,Honda Jazz,Hatchback
-CUST00255,Customer_255,31,Female,Surabaya,Honda Jazz,Hatchback
-CUST00283,Customer_283,42,Male,Surabaya,Honda Jazz,Hatchback
-CUST00325,Customer_325,42,Male,Surabaya,Honda Jazz,Hatchback
-CUST00408,Customer_408,38,Male,Surabaya,Honda Jazz,Hatchback
-CUST00029,Customer_29,21,Male,Surabaya,Mazda 2,Hatchback
-CUST00246,Customer_246,40,Female,Surabaya,Mazda 2,Hatchback
-CUST00393,Customer_393,21,Female,Surabaya,Mazda 2,Hatchback
-CUST00459,Customer_459,46,Male,Surabaya,Mazda 2,Hatchback
-CUST00405,Customer_405,40,Female,Surabaya,Mazda 6,Sedan
-CUST00015,Customer_15,37,Male,Surabaya,Mazda CX-3,Crossover
-CUST00018,Customer_18,49,Male,Surabaya,Mazda CX-3,Crossover
-CUST00101,Customer_101,36,Male,Surabaya,Mazda CX-3,Crossover
-CUST00111,Customer_111,21,Female,Surabaya,Mazda CX-3,Crossover
-CUST00175,Customer_175,23,Male,Surabaya,Mazda CX-3,Crossover
-CUST00284,Customer_284,22,Male,Surabaya,Mazda CX-3,Crossover
-CUST00291,Customer_291,41,Male,Surabaya,Mazda CX-3,Crossover
-CUST00376,Customer_376,35,Male,Surabaya,Mazda CX-3,Crossover
-CUST00012,Customer_12,37,Female,Surabaya,Mitsubishi Pajero,SUV
-CUST00085,Customer_85,20,Male,Surabaya,Mitsubishi Pajero,SUV
-CUST00163,Customer_163,39,Female,Surabaya,Mitsubishi Pajero,SUV
-CUST00169,Customer_169,42,Female,Surabaya,Mitsubishi Pajero,SUV
-CUST00368,Customer_368,60,Female,Surabaya,Mitsubishi Pajero,SUV
-CUST00033,Customer_33,33,Male,Surabaya,Mitsubishi Xpander,MPV
-CUST00102,Customer_102,60,Male,Surabaya,Mitsubishi Xpander,MPV
-CUST00331,Customer_331,54,Female,Surabaya,Mitsubishi Xpander,MPV
-CUST00403,Customer_403,32,Male,Surabaya,Mitsubishi Xpander,MPV
-CUST00420,Customer_420,28,Female,Surabaya,Mitsubishi Xpander,MPV
-CUST00103,Customer_103,38,Male,Surabaya,Nissan Juke,Crossover
-CUST00282,Customer_282,50,Female,Surabaya,Nissan Juke,Crossover
-CUST00324,Customer_324,60,Female,Surabaya,Nissan Juke,Crossover
-CUST00360,Customer_360,27,Male,Surabaya,Nissan Juke,Crossover
-CUST00013,Customer_13,42,Male,Surabaya,Nissan Teana,Sedan
-CUST00058,Customer_58,45,Male,Surabaya,Nissan Teana,Sedan
-CUST00065,Customer_65,38,Male,Surabaya,Nissan Teana,Sedan
-CUST00066,Customer_66,52,Female,Surabaya,Nissan Teana,Sedan
-CUST00089,Customer_89,45,Male,Surabaya,Nissan Teana,Sedan
-CUST00134,Customer_134,36,Female,Surabaya,Nissan Teana,Sedan
-CUST00196,Customer_196,21,Male,Surabaya,Nissan Teana,Sedan
-CUST00304,Customer_304,50,Male,Surabaya,Nissan Teana,Sedan
-CUST00307,Customer_307,23,Female,Surabaya,Nissan Teana,Sedan
-CUST00373,Customer_373,52,Male,Surabaya,Nissan Teana,Sedan
-CUST00380,Customer_380,23,Male,Surabaya,Nissan Teana,Sedan
-CUST00418,Customer_418,22,Male,Surabaya,Nissan Teana,Sedan
-CUST00110,Customer_110,51,Male,Surabaya,Suzuki Ertiga,MPV
-CUST00121,Customer_121,49,Female,Surabaya,Suzuki Ertiga,MPV
-CUST00290,Customer_290,43,Female,Surabaya,Suzuki Ertiga,MPV
-CUST00456,Customer_456,46,Female,Surabaya,Suzuki Ertiga,MPV
-CUST00131,Customer_131,35,Male,Surabaya,Suzuki Swift,Hatchback
-CUST00217,Customer_217,57,Female,Surabaya,Suzuki Swift,Hatchback
-CUST00227,Customer_227,23,Female,Surabaya,Suzuki Swift,Hatchback
-CUST00297,Customer_297,31,Male,Surabaya,Suzuki Swift,Hatchback
-CUST00337,Customer_337,26,Male,Surabaya,Suzuki Swift,Hatchback
-CUST00427,Customer_427,39,Male,Surabaya,Suzuki Swift,Hatchback
-CUST00084,Customer_84,44,Male,Surabaya,Toyota Avanza,MPV
-CUST00286,Customer_286,48,Male,Surabaya,Toyota Avanza,MPV
-CUST00295,Customer_295,39,Female,Surabaya,Toyota Avanza,MPV
-CUST00308,Customer_308,53,Male,Surabaya,Toyota Avanza,MPV
-CUST00439,Customer_439,55,Female,Surabaya,Toyota Avanza,MPV
-CUST00441,Customer_441,22,Female,Surabaya,Toyota Avanza,MPV
-CUST00081,Customer_81,21,Male,Surabaya,Toyota C-HR,Crossover
-CUST00154,Customer_154,57,Female,Surabaya,Toyota C-HR,Crossover
-CUST00250,Customer_250,47,Male,Surabaya,Toyota C-HR,Crossover
-CUST00339,Customer_339,48,Male,Surabaya,Toyota C-HR,Crossover
-CUST00493,Customer_493,22,Male,Surabaya,Toyota C-HR,Crossover
-CUST00041,Customer_41,26,Female,Surabaya,Toyota Camry,Sedan
-CUST00079,Customer_79,32,Female,Surabaya,Toyota Camry,Sedan
-CUST00024,Customer_24,54,Female,Surabaya,Toyota Rush,SUV
-CUST00067,Customer_67,60,Female,Surabaya,Toyota Rush,SUV
-CUST00068,Customer_68,41,Male,Surabaya,Toyota Rush,SUV
-CUST00277,Customer_277,53,Male,Surabaya,Toyota Rush,SUV
-CUST00073,Customer_73,35,Male,Surabaya,Toyota Yaris,Hatchback
-CUST00259,Customer_259,43,Female,Surabaya,Toyota Yaris,Hatchback
-CUST00263,Customer_263,52,Male,Surabaya,Toyota Yaris,Hatchback
-CUST00314,Customer_314,28,Male,Surabaya,Toyota Yaris,Hatchback
-CUST00422,Customer_422,20,Female,Surabaya,Toyota Yaris,Hatchback
+customer_id,name,age,gender,city,vehicle_type,vehicle_name
+C0007,Matthew Larson,47,Female,Lopezshire,SUV,Daihatsu Terios
+C0015,Alexander Garcia,26,Female,Melissaport,SUV,Daihatsu Terios
+C0041,Caleb Walter,28,Female,East Johnview,SUV,Daihatsu Terios
+C0060,Nancy Lopez,30,Female,West Joel,SUV,Daihatsu Terios
+C0075,Anthony Wright,52,Female,Port Sarah,SUV,Daihatsu Terios
+C0098,Wendy Fox,45,Female,Lake Jennifer,SUV,Daihatsu Terios
+C0189,Sheryl Rojas,27,Female,Chavezbury,SUV,Daihatsu Terios
+C0201,Tyler Arellano,39,Female,Sandersshire,SUV,Daihatsu Terios
+C0220,Christina Watson,30,Female,Davidberg,SUV,Daihatsu Terios
+C0222,Bryan Thomas,27,Female,South Todd,SUV,Daihatsu Terios
+C0223,Denise Baker,51,Female,Lake Matthewburgh,SUV,Daihatsu Terios
+C0005,Jonathan Flores,54,Female,New Michelle,MPV,Daihatsu Xenia
+C0019,Michael Patrick,30,Female,Hillshire,MPV,Daihatsu Xenia
+C0036,Shannon Simmons,29,Female,North Ethanfort,MPV,Daihatsu Xenia
+C0042,Jonathan Wagner,36,Female,Thomasburgh,MPV,Daihatsu Xenia
+C0106,Mark Bryant,43,Female,Colemanside,MPV,Daihatsu Xenia
+C0110,Heather Estrada,32,Female,New Brendabury,MPV,Daihatsu Xenia
+C0120,Zachary Gallegos,44,Female,Lake Richard,MPV,Daihatsu Xenia
+C0190,Krista Winters,53,Female,Port Sandra,MPV,Daihatsu Xenia
+C0085,Amy Davis,28,Female,New Mariaville,SUV,Honda CR-V
+C0107,Tiffany Rodriguez,59,Female,South Lisachester,SUV,Honda CR-V
+C0108,Justin Beck,52,Female,Port Sharon,SUV,Honda CR-V
+C0172,Anna Myers,34,Female,Nicholasside,SUV,Honda CR-V
+C0227,John Johnson,46,Female,South Sherichester,SUV,Honda CR-V
+C0245,Nicole Harris,23,Female,Donaldland,SUV,Honda CR-V
+C0282,Maria Robinson,54,Female,Elizabethmouth,SUV,Honda CR-V
+C0291,Maria Moody,35,Female,Kimbury,SUV,Honda CR-V
+C0037,Alicia Sullivan,58,Female,Port Samantha,Sedan,Honda Civic
+C0091,David Brown,42,Female,Adamsfort,Sedan,Honda Civic
+C0195,Laura Moore,46,Female,Port Mercedesville,Sedan,Honda Civic
+C0263,Bryan Ayala,38,Female,Port Ianbury,Sedan,Honda Civic
+C0024,Mary Rivas,29,Female,Rosariomouth,Crossover,Honda HR-V
+C0030,Peter Dominguez,58,Female,Katherineton,Crossover,Honda HR-V
+C0061,Bobby Cannon,33,Female,Angelatown,Crossover,Honda HR-V
+C0191,Shelia Watts,39,Female,West Michael,Crossover,Honda HR-V
+C0281,John Irwin,35,Female,Jenniferborough,Crossover,Honda HR-V
+C0298,Jacqueline Mclaughlin,26,Female,West Jeanetteton,Crossover,Honda HR-V
+C0008,Mark Mccann,33,Female,Port Mike,Hatchback,Honda Jazz
+C0027,Elizabeth Bell,28,Female,Lake Zacharymouth,Hatchback,Honda Jazz
+C0072,Barry Snyder,36,Female,West Mia,Hatchback,Honda Jazz
+C0082,Brian Small,60,Female,South Markmouth,Hatchback,Honda Jazz
+C0252,Kyle Nguyen,24,Female,Lake Jordanmouth,Hatchback,Honda Jazz
+C0259,Tammy Anderson,58,Female,West Michael,Hatchback,Honda Jazz
+C0289,Carlos Young,28,Female,Lake Brianborough,Hatchback,Honda Jazz
+C0006,Brian Watkins,57,Female,Carrburgh,Sedan,Hyundai Elantra
+C0057,David Nguyen,31,Female,Timothyberg,Sedan,Hyundai Elantra
+C0086,Jennifer Olson,55,Female,North Anna,Sedan,Hyundai Elantra
+C0113,Kim Mcbride,57,Female,North Fredside,Sedan,Hyundai Elantra
+C0161,Brandon Alvarado,31,Female,East Daniellehaven,Sedan,Hyundai Elantra
+C0233,Maria Macias,22,Female,Watsonton,Sedan,Hyundai Elantra
+C0250,Lawrence Smith,60,Female,North Emily,Sedan,Hyundai Elantra
+C0058,Dennis Pena,24,Female,Wattsberg,Crossover,Hyundai Kona
+C0089,Adam Brown,22,Female,Mooreshire,Crossover,Hyundai Kona
+C0096,Mary Gray,32,Female,Thomasborough,Crossover,Hyundai Kona
+C0111,Ashley Chen,59,Female,West Matthewtown,Crossover,Hyundai Kona
+C0016,Robert Schultz,60,Female,Port Williamborough,Hatchback,Mazda 2
+C0033,Amy Rodriguez,30,Female,Brandonfurt,Hatchback,Mazda 2
+C0044,Debra Finley,53,Female,East Maryburgh,Hatchback,Mazda 2
+C0094,Jennifer Miller,35,Female,Mooreton,Hatchback,Mazda 2
+C0129,Johnny Robertson,24,Female,New Nicoleland,Hatchback,Mazda 2
+C0175,Keith Haas,37,Female,Bateshaven,Hatchback,Mazda 2
+C0212,Jesse Roberson,51,Female,New Jeffrey,Hatchback,Mazda 2
+C0229,Amber Johnson,29,Female,West Paula,Hatchback,Mazda 2
+C0262,Chelsea Thomas,22,Female,South Christopherton,Hatchback,Mazda 2
+C0271,Suzanne Jackson,60,Female,Lake Danielle,Hatchback,Mazda 2
+C0023,Danielle Rivas,33,Female,Lake Davidfurt,Sedan,Mazda 3
+C0073,Bobby Gonzales,49,Female,Lake Ryan,Sedan,Mazda 3
+C0130,Gwendolyn Horn,41,Female,Andrewfurt,Sedan,Mazda 3
+C0167,Jessica Harris,36,Female,East Andrew,Sedan,Mazda 3
+C0173,Trevor Higgins,57,Female,Nicholasmouth,Sedan,Mazda 3
+C0197,Adrienne Olson,38,Female,Abigailstad,Sedan,Mazda 3
+C0266,Steven Mendoza,50,Female,Phillipsland,Sedan,Mazda 3
+C0124,Jonathan Sloan,28,Female,East Jessica,SUV,Mitsubishi Pajero
+C0133,Christopher Calderon,46,Female,East Nicoleburgh,SUV,Mitsubishi Pajero
+C0210,Katherine Brown,42,Female,Lake Laura,SUV,Mitsubishi Pajero
+C0236,Christian Warren,26,Female,Janicefort,SUV,Mitsubishi Pajero
+C0238,Alicia Kelley,36,Female,West Elizabeth,SUV,Mitsubishi Pajero
+C0269,Haley Mcfarland,20,Female,Mathisfurt,SUV,Mitsubishi Pajero
+C0274,Jeffrey Pope,39,Female,Rodneytown,SUV,Mitsubishi Pajero
+C0294,Christopher Espinoza,48,Female,Griffinton,SUV,Mitsubishi Pajero
+C0125,Tracy Hamilton,48,Female,New Harryfurt,MPV,Mitsubishi Xpander
+C0184,Jason Harper,50,Female,Maryport,MPV,Mitsubishi Xpander
+C0224,Kimberly Hopkins,46,Female,Smithport,MPV,Mitsubishi Xpander
+C0228,Emily Floyd,20,Female,Robinsonville,MPV,Mitsubishi Xpander
+C0265,Michael Myers,53,Female,South Bethany,MPV,Mitsubishi Xpander
+C0012,Melanie Webster,55,Female,North Joseph,Crossover,Nissan Juke
+C0038,Jason Miller,27,Female,Millerland,Crossover,Nissan Juke
+C0112,Joshua Edwards,39,Female,North Patricia,Crossover,Nissan Juke
+C0142,Joseph Andrews,25,Female,Lisaburgh,Crossover,Nissan Juke
+C0202,Brooke Martinez,49,Female,West Dannyborough,Crossover,Nissan Juke
+C0215,Jennifer Murray,54,Female,Nguyenberg,Crossover,Nissan Juke
+C0216,Nathan Foster,32,Female,Brownmouth,Crossover,Nissan Juke
+C0235,Elizabeth Rodriguez,28,Female,Port Scott,Crossover,Nissan Juke
+C0279,Audrey Frank,51,Female,Port Brenda,Crossover,Nissan Juke
+C0297,Ms. Cheyenne Banks,23,Female,Jonesborough,Crossover,Nissan Juke
+C0299,Robert Franklin,25,Female,New Thomas,Crossover,Nissan Juke
+C0026,William Flores,57,Female,Callahanfort,MPV,Suzuki Ertiga
+C0051,Martha Bell,35,Female,Mitchellmouth,MPV,Suzuki Ertiga
+C0100,Mary Dixon,54,Female,East Cristinachester,MPV,Suzuki Ertiga
+C0103,Alexander Smith,42,Female,North Garrettmouth,MPV,Suzuki Ertiga
+C0126,Alyssa Clark,30,Female,Debrahaven,MPV,Suzuki Ertiga
+C0162,Ashley Peterson,49,Female,Tamaramouth,MPV,Suzuki Ertiga
+C0209,Darren Dunn,60,Female,Molinaview,MPV,Suzuki Ertiga
+C0217,Allen Farrell,60,Female,New Elizabethville,MPV,Suzuki Ertiga
+C0230,Melissa Petersen,42,Female,Lake Tamaratown,MPV,Suzuki Ertiga
+C0231,Shelley Baldwin,49,Female,New Carolynchester,MPV,Suzuki Ertiga
+C0239,Jeffrey Johnson,25,Female,New Henry,MPV,Suzuki Ertiga
+C0240,Lauren Nguyen,40,Female,Lake Barbarashire,MPV,Suzuki Ertiga
+C0010,Daniel Figueroa PhD,58,Female,North Bradley,Hatchback,Suzuki Swift
+C0077,Tara Thompson,30,Female,Besthaven,Hatchback,Suzuki Swift
+C0137,Anita Everett,44,Female,South Angela,Hatchback,Suzuki Swift
+C0253,Sylvia Sloan,60,Female,Lake Christine,Hatchback,Suzuki Swift
+C0035,Aaron Wilson,60,Female,Kennethfurt,MPV,Toyota Avanza
+C0040,Robert Garcia,25,Female,Port Stevetown,MPV,Toyota Avanza
+C0119,Crystal Reilly,49,Female,Aaronview,MPV,Toyota Avanza
+C0153,Meredith Andersen,30,Female,Mistyton,MPV,Toyota Avanza
+C0157,Johnathan Fletcher,42,Female,Jonesmouth,MPV,Toyota Avanza
+C0221,Courtney Cook,55,Female,Caseymouth,MPV,Toyota Avanza
+C0270,Julia Wise,49,Female,Brooksfurt,MPV,Toyota Avanza
+C0285,Kristen Davis,23,Female,Hopkinsborough,MPV,Toyota Avanza
+C0296,Bonnie Dixon,53,Female,Caitlynborough,MPV,Toyota Avanza
+C0053,Tony Harris,47,Female,East Gary,Crossover,Toyota CH-R
+C0063,Megan Tucker,49,Female,Anitatown,Crossover,Toyota CH-R
+C0109,Jason Hurley,45,Female,West Gailville,Crossover,Toyota CH-R
+C0127,Suzanne Reed,35,Female,South Mary,Crossover,Toyota CH-R
+C0145,Ryan Sanders,41,Female,Hendersonstad,Crossover,Toyota CH-R
+C0160,Tiffany Burns,60,Female,East Adam,Crossover,Toyota CH-R
+C0166,Erin Meza,31,Female,New Feliciaview,Crossover,Toyota CH-R
+C0174,Brenda Randolph,47,Female,South Austin,Crossover,Toyota CH-R
+C0203,Maria Martinez,52,Female,Glovermouth,Crossover,Toyota CH-R
+C0205,William Schneider,58,Female,Port Candace,Crossover,Toyota CH-R
+C0251,Yvonne Benson,20,Female,Lake Ronald,Crossover,Toyota CH-R
+C0256,Alexander Patrick,56,Female,Burnettfurt,Crossover,Toyota CH-R
+C0014,Jay Faulkner,34,Female,Jamieborough,SUV,Toyota Rush
+C0118,Peggy Wiggins,35,Female,Caseymouth,SUV,Toyota Rush
+C0154,Michael Smith,39,Female,East Kimstad,SUV,Toyota Rush
+C0258,Dustin Willis,58,Female,Ericland,SUV,Toyota Rush
+C0025,Monique Davidson,55,Female,Lake Amberfurt,Sedan,Toyota Vios
+C0043,Cassandra Dominguez,39,Female,Brianmouth,Sedan,Toyota Vios
+C0056,Katherine Morales MD,54,Female,Annebury,Sedan,Toyota Vios
+C0178,Aaron Hale,50,Female,Dominiquefurt,Sedan,Toyota Vios
+C0188,Mary Rodriguez,56,Female,South Darren,Sedan,Toyota Vios
+C0232,Kristin Hayes MD,56,Female,East Daniellechester,Sedan,Toyota Vios
+C0248,Miranda Buchanan,25,Female,West John,Sedan,Toyota Vios
+C0260,Charles Stephens,59,Female,New Emily,Sedan,Toyota Vios
+C0268,Katie Lee,45,Female,Rodriguezland,Sedan,Toyota Vios
+C0277,Mary Franklin,44,Female,Johnsonville,Sedan,Toyota Vios
+C0066,David Marshall,23,Female,West Kathy,Hatchback,Toyota Yaris
+C0099,Kimberly Weaver,37,Female,Debbiemouth,Hatchback,Toyota Yaris
+C0158,Tammy Fischer,52,Female,Jonesside,Hatchback,Toyota Yaris
+C0182,Amanda Larsen,23,Female,Hollybury,Hatchback,Toyota Yaris
+C0207,Heather Ward,31,Female,West Terri,Hatchback,Toyota Yaris
+C0257,Candice Roberts,45,Female,Kaylaville,Hatchback,Toyota Yaris
+C0004,Rita Jordan,34,Male,Dianaville,SUV,Daihatsu Terios
+C0045,Emily Sparks,34,Male,Jonathanmouth,SUV,Daihatsu Terios
+C0048,Jonathon Lawson,24,Male,Brianland,SUV,Daihatsu Terios
+C0062,Jennifer Gilbert,44,Male,New Danielle,SUV,Daihatsu Terios
+C0149,Steven Lopez,32,Male,Tammyfurt,SUV,Daihatsu Terios
+C0198,Jimmy Fisher,36,Male,East Alexandra,SUV,Daihatsu Terios
+C0218,Christopher Davis,37,Male,Lake Andre,SUV,Daihatsu Terios
+C0237,Susan Torres,46,Male,Nguyenport,SUV,Daihatsu Terios
+C0272,Russell Robbins,50,Male,Schroedermouth,SUV,Daihatsu Terios
+C0275,Meghan Armstrong,22,Male,East Joshua,SUV,Daihatsu Terios
+C0287,Christine French,57,Male,Johnsonport,SUV,Daihatsu Terios
+C0292,Shannon Duncan,36,Male,Jonesburgh,SUV,Daihatsu Terios
+C0047,Timothy Robinson,20,Male,East Nicoleton,MPV,Daihatsu Xenia
+C0067,Christopher Ward,23,Male,New Randy,MPV,Daihatsu Xenia
+C0092,Patrick Bruce,35,Male,Port Stephen,MPV,Daihatsu Xenia
+C0138,Brittany Alexander,51,Male,Danielshire,MPV,Daihatsu Xenia
+C0150,Jessica Bruce,35,Male,North Peter,MPV,Daihatsu Xenia
+C0169,Paul Myers,25,Male,Lake Kellyburgh,MPV,Daihatsu Xenia
+C0249,William Lopez,51,Male,Oliviastad,MPV,Daihatsu Xenia
+C0300,Kari Reynolds,24,Male,New Heidimouth,MPV,Daihatsu Xenia
+C0032,Elizabeth Houston,41,Male,North Sonya,SUV,Honda CR-V
+C0034,Luis Gordon,52,Male,Foxbury,SUV,Honda CR-V
+C0156,Mr. Michael Evans,58,Male,Virginiahaven,SUV,Honda CR-V
+C0164,Jill Wright,48,Male,North Joanneview,SUV,Honda CR-V
+C0068,Scott Cooper,58,Male,North Michael,Sedan,Honda Civic
+C0088,Mr. Mark Gray,43,Male,New Matthewborough,Sedan,Honda Civic
+C0095,Matthew Reynolds,44,Male,Joneston,Sedan,Honda Civic
+C0261,Adam Brown,60,Male,West Makaylachester,Sedan,Honda Civic
+C0290,Helen Smith,21,Male,Vincentside,Sedan,Honda Civic
+C0064,Kenneth Howell PhD,29,Male,Conleyburgh,Crossover,Honda HR-V
+C0114,Sonya Fitzgerald,48,Male,West David,Crossover,Honda HR-V
+C0165,Tiffany Johnson,41,Male,Marshtown,Crossover,Honda HR-V
+C0170,Kenneth Maynard,55,Male,Lewisside,Crossover,Honda HR-V
+C0171,Justin Serrano,48,Male,West Susan,Crossover,Honda HR-V
+C0187,Robert Porter,24,Male,West Michelestad,Crossover,Honda HR-V
+C0234,Steven Martinez,44,Male,South Alicia,Crossover,Honda HR-V
+C0255,Ronnie Parker,26,Male,Matthewburgh,Crossover,Honda HR-V
+C0039,Daniel Smith,23,Male,Kevinstad,Hatchback,Honda Jazz
+C0065,David Goodman,23,Male,East Lisatown,Hatchback,Honda Jazz
+C0117,Amy Rosario,32,Male,North Lynn,Hatchback,Honda Jazz
+C0148,Pamela Collins,24,Male,North Tracyview,Hatchback,Honda Jazz
+C0176,Elizabeth Miller,27,Male,Gonzalezborough,Hatchback,Honda Jazz
+C0180,Kevin Smith,43,Male,Albertbury,Hatchback,Honda Jazz
+C0029,Samantha Gillespie,58,Male,Jonesmouth,Sedan,Hyundai Elantra
+C0069,Shannon Love,27,Male,Tracystad,Sedan,Hyundai Elantra
+C0093,Jasmine Lozano,21,Male,Davidhaven,Sedan,Hyundai Elantra
+C0132,Travis Moore,29,Male,Lake Matthewburgh,Sedan,Hyundai Elantra
+C0135,Brian Mcguire,44,Male,Jonathanside,Sedan,Hyundai Elantra
+C0143,Daniel Robinson,31,Male,North George,Sedan,Hyundai Elantra
+C0183,Amber Parks,26,Male,New Marissa,Sedan,Hyundai Elantra
+C0247,Jeremiah Watkins,56,Male,Williammouth,Sedan,Hyundai Elantra
+C0293,Katherine Bridges,53,Male,Waltershaven,Sedan,Hyundai Elantra
+C0052,Darren Williams,26,Male,West Victoria,Crossover,Hyundai Kona
+C0121,Jerome Miller,29,Male,Kylechester,Crossover,Hyundai Kona
+C0141,Aaron Phillips,59,Male,Lorishire,Crossover,Hyundai Kona
+C0155,Michael Hayes,24,Male,New Scott,Crossover,Hyundai Kona
+C0225,William Ford,49,Male,Chadberg,Crossover,Hyundai Kona
+C0226,Karen Smith,58,Male,Hudsonburgh,Crossover,Hyundai Kona
+C0244,Luis Valencia,39,Male,Garciaside,Crossover,Hyundai Kona
+C0264,Anthony Reed,32,Male,Port Alyssashire,Crossover,Hyundai Kona
+C0022,Ronald Michael,37,Male,New Kyletown,Hatchback,Mazda 2
+C0050,Donald Ward,33,Male,Robertsside,Hatchback,Mazda 2
+C0139,Michael Griffin,51,Male,Walkerberg,Hatchback,Mazda 2
+C0144,Andrea Frye,40,Male,West Jean,Hatchback,Mazda 2
+C0146,Barbara Patel,36,Male,Jamesfurt,Hatchback,Mazda 2
+C0186,Dennis Simpson,27,Male,West Heather,Hatchback,Mazda 2
+C0219,Edgar Humphrey,51,Male,Jamesport,Hatchback,Mazda 2
+C0254,Ronald King,39,Male,South Michael,Hatchback,Mazda 2
+C0276,Sara Acosta,27,Male,Villegasfurt,Hatchback,Mazda 2
+C0278,Nicholas Davis,57,Male,Port Jamesfort,Hatchback,Mazda 2
+C0017,Steven Wagner,42,Male,Mejiaburgh,Sedan,Mazda 3
+C0076,Mark Le,24,Male,Randyhaven,Sedan,Mazda 3
+C0200,Mr. Kevin Frey,29,Male,Ethantown,Sedan,Mazda 3
+C0242,Mrs. Christina Villa,34,Male,New Robertmouth,Sedan,Mazda 3
+C0288,Brenda Hardy,29,Male,Gardnerland,Sedan,Mazda 3
+C0011,Tiffany Archer MD,54,Male,Juliafort,SUV,Mitsubishi Pajero
+C0084,Patrick Hobbs,37,Male,Lake Christine,SUV,Mitsubishi Pajero
+C0122,Kyle Hughes,34,Male,Patrickhaven,SUV,Mitsubishi Pajero
+C0159,Rachel Proctor,51,Male,Lewisstad,SUV,Mitsubishi Pajero
+C0283,Dana Johnson,37,Male,Jennifermouth,SUV,Mitsubishi Pajero
+C0284,Kimberly Smith,25,Male,Port Benjamin,SUV,Mitsubishi Pajero
+C0013,Matthew Smith,56,Male,New Brianland,MPV,Mitsubishi Xpander
+C0031,Victoria Adams,55,Male,Lake Katieland,MPV,Mitsubishi Xpander
+C0078,Andrea Hernandez,59,Male,Grahamfort,MPV,Mitsubishi Xpander
+C0079,Gina Johnson,26,Male,South Keith,MPV,Mitsubishi Xpander
+C0102,Alexander Simmons,22,Male,Vaughanside,MPV,Mitsubishi Xpander
+C0163,Gregory Hoover,40,Male,North Todd,MPV,Mitsubishi Xpander
+C0179,Tiffany Payne,26,Male,Dennisside,MPV,Mitsubishi Xpander
+C0273,Ann Meyers,59,Male,Washingtonview,MPV,Mitsubishi Xpander
+C0054,Jamie Williams,26,Male,Freemanborough,Crossover,Nissan Juke
+C0104,Jonathan Smith,44,Male,Johnsonland,Crossover,Nissan Juke
+C0147,Cameron Salinas,54,Male,Alfredmouth,Crossover,Nissan Juke
+C0151,Jerry Pugh,56,Male,East Allenview,Crossover,Nissan Juke
+C0199,Scott Williams,54,Male,New Stacyburgh,Crossover,Nissan Juke
+C0204,Jill Ryan,58,Male,Harrelltown,Crossover,Nissan Juke
+C0213,Christopher Sullivan,49,Male,South Kathleenfurt,Crossover,Nissan Juke
+C0243,Michael Mcconnell,60,Male,West Nathan,Crossover,Nissan Juke
+C0003,Brian Wilson,22,Male,New Francisfort,MPV,Suzuki Ertiga
+C0083,Clinton Thomas,36,Male,West Dawn,MPV,Suzuki Ertiga
+C0115,Alexis Perez,30,Male,North Lauren,MPV,Suzuki Ertiga
+C0123,Jordan Navarro,23,Male,Kaitlintown,MPV,Suzuki Ertiga
+C0128,Alicia Gregory,60,Male,West Danielle,MPV,Suzuki Ertiga
+C0134,Tracey Murphy,46,Male,Thomasshire,MPV,Suzuki Ertiga
+C0136,Scott Schneider,50,Male,Port Shawn,MPV,Suzuki Ertiga
+C0196,George Myers,38,Male,North Jesseburgh,MPV,Suzuki Ertiga
+C0208,Chelsea Wyatt,37,Male,East Michael,MPV,Suzuki Ertiga
+C0081,Sarah Lane,58,Male,West Derekfurt,Hatchback,Suzuki Swift
+C0097,Cory Young,34,Male,Lake Bradley,Hatchback,Suzuki Swift
+C0116,Douglas Thomas,25,Male,South Breannaport,Hatchback,Suzuki Swift
+C0168,Patrick Berry,55,Male,Amberton,Hatchback,Suzuki Swift
+C0211,Amy Delgado,26,Male,Mccannfurt,Hatchback,Suzuki Swift
+C0214,Marissa Perez,40,Male,Port Nancyview,Hatchback,Suzuki Swift
+C0246,Olivia Spencer,47,Male,South Robin,Hatchback,Suzuki Swift
+C0059,William Hicks DVM,23,Male,Amandamouth,MPV,Toyota Avanza
+C0070,Cheryl Roberts,59,Male,Kellyview,MPV,Toyota Avanza
+C0087,Richard Rivera,27,Male,Phillipsland,MPV,Toyota Avanza
+C0131,Raymond Parker,28,Male,East Sarahborough,MPV,Toyota Avanza
+C0241,Diana Pennington,59,Male,East Dianechester,MPV,Toyota Avanza
+C0295,Joseph West,48,Male,Orrborough,MPV,Toyota Avanza
+C0020,Connie Garcia,60,Male,East Debbiechester,Crossover,Toyota CH-R
+C0055,Brandi Carter,26,Male,Dayton,Crossover,Toyota CH-R
+C0071,Justin Morrow,36,Male,North Crystal,Crossover,Toyota CH-R
+C0140,Kelly May,45,Male,New Richard,Crossover,Toyota CH-R
+C0152,Kimberly Gray,43,Male,North Gregorybury,Crossover,Toyota CH-R
+C0185,Mario Snyder,31,Male,Sarahmouth,Crossover,Toyota CH-R
+C0001,Phyllis Brown,37,Male,Monroechester,SUV,Toyota Rush
+C0009,Theresa Gutierrez,44,Male,Derrickport,SUV,Toyota Rush
+C0028,Michael Martin,27,Male,Mcclurefurt,SUV,Toyota Rush
+C0074,Ariana Mitchell,49,Male,Bellstad,SUV,Toyota Rush
+C0101,Samuel Rodriguez,36,Male,Jamesshire,SUV,Toyota Rush
+C0206,Mark Hart,34,Male,Lake Debraton,SUV,Toyota Rush
+C0002,Joseph Rosales,26,Male,Port Sierra,Sedan,Toyota Vios
+C0193,Katherine Thompson,36,Male,Campbellview,Sedan,Toyota Vios
+C0194,Brian Edwards,31,Male,Gonzalezside,Sedan,Toyota Vios
+C0286,Mike Gross,56,Male,North Dwayne,Sedan,Toyota Vios
+C0018,Carrie Bennett,58,Male,Lake Dawnfurt,Hatchback,Toyota Yaris
+C0021,Ashley Williams,34,Male,Joneston,Hatchback,Toyota Yaris
+C0046,Christopher Costa,57,Male,Tylerland,Hatchback,Toyota Yaris
+C0049,Darren Miller,52,Male,Comptonville,Hatchback,Toyota Yaris
+C0080,Joseph Jones,26,Male,Brownbury,Hatchback,Toyota Yaris
+C0090,Sharon Harrell,42,Male,Lucaschester,Hatchback,Toyota Yaris
+C0105,Mary Martinez,47,Male,Port James,Hatchback,Toyota Yaris
+C0177,Laura Ortega,54,Male,Lake Javier,Hatchback,Toyota Yaris
+C0181,Greg Williams,54,Male,Lake Michael,Hatchback,Toyota Yaris
+C0192,Brittany Bryan,59,Male,Farrellmouth,Hatchback,Toyota Yaris
+C0267,Dennis Diaz,49,Male,Port Mariaborough,Hatchback,Toyota Yaris
+C0280,Ashley Leon,43,Male,Lake Julie,Hatchback,Toyota Yaris
