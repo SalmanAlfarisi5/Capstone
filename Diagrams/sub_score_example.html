@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Substitution Score Calculation Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .flow-connector {
+            position: relative;
+            flex-shrink: 0;
+        }
+        /* Arrow Right for large screens */
+        .arrow-right::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 2px;
+            background-color: #9ca3af; /* gray-400 */
+        }
+        .arrow-right::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 6px solid #9ca3af; /* gray-400 */
+        }
+
+        /* Arrow Down for small screens */
+        .arrow-down::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 90%;
+            background-color: #9ca3af; /* gray-400 */
+        }
+        .arrow-down::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 5%;
+            transform: translateX(-50%);
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #9ca3af; /* gray-400 */
+        }
+        
+        /* Custom Horizontal Merge Connector */
+        .merge-connector-h {
+            position: relative;
+            width: 60px;
+            height: 280px; /* Adjusted for taller cards */
+            flex-shrink: 0;
+        }
+        .merge-line-h {
+            position: absolute;
+            background-color: #9ca3af;
+        }
+        .line-in-top {
+            top: 25%;
+            left: 0;
+            width: 30px;
+            height: 2px;
+        }
+        .line-in-bottom {
+            bottom: 25%;
+            left: 0;
+            width: 30px;
+            height: 2px;
+        }
+        .line-vertical {
+            top: 25%;
+            left: 30px;
+            width: 2px;
+            height: 50%;
+        }
+        .line-out {
+            top: 50%;
+            left: 30px;
+            width: 30px;
+            height: 2px;
+            transform: translateY(-50%);
+        }
+        .line-out::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 6px solid #9ca3af;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+    <div class="w-full max-w-7xl bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+        <h1 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4">Product Substitution Score: Example Calculation</h1>
+        <p class="text-center text-gray-500 mb-10">Comparing SpeedLine (P0195) vs. TorqueX (P0063) Batteries</p>
+
+        <div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-4">
+
+            <!-- Column 1: Inputs -->
+            <div class="flex lg:flex-col justify-around w-full lg:w-auto lg:space-y-8">
+                <!-- Attributes Input -->
+                <div class="w-full max-w-sm text-center mb-8 lg:mb-0">
+                    <h2 class="text-lg font-bold text-blue-700 mb-2">1. Attribute Input</h2>
+                    <div class="bg-blue-50 border-2 border-blue-200 rounded-lg p-4 shadow-md h-full text-left text-sm">
+                        <div class="mb-3">
+                           <p class="font-bold text-blue-800">P0195: SpeedLine</p>
+                           <p class="text-gray-600 text-xs"><strong>Vehicles:</strong> Daihatsu Xenia, Toyota Avanza</p>
+                           <p class="text-gray-600 text-xs"><strong>Price:</strong> 449.85</p>
+                        </div>
+                        <div class="border-t border-blue-200 pt-3">
+                           <p class="font-bold text-blue-800">P0063: TorqueX</p>
+                           <p class="text-gray-600 text-xs"><strong>Vehicles:</strong> Toyota Avanza</p>
+                           <p class="text-gray-600 text-xs"><strong>Price:</strong> 492.79</p>
+                        </div>
+                         <div class="border-t border-blue-200 mt-3 pt-3">
+                           <p class="font-semibold text-blue-800">Shared Attributes</p>
+                           <p class="text-gray-600 text-xs"><strong>Category:</strong> Batteries, <strong>Grade:</strong> Premium, <strong>Material:</strong> Lithium, <strong>Type:</strong> MPV</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Behaviour Input -->
+                <div class="w-full max-w-sm text-center">
+                     <h2 class="text-lg font-bold text-green-700 mb-2">2. Behaviour Input</h2>
+                    <div class="bg-green-50 border-2 border-green-200 rounded-lg p-4 shadow-md h-full flex flex-col justify-center">
+                        <div class="flex items-center justify-center mb-2">
+                             <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <h3 class="font-semibold text-lg text-green-800">Customer Data</h3>
+                        </div>
+                        <p class="text-sm text-green-700">Transactional data for P0195 & P0063 (Shared baskets)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrow 1 -->
+            <div class="flow-connector w-16 h-16 arrow-right hidden lg:block"></div>
+            <div class="flow-connector w-16 h-16 arrow-down block lg:hidden"></div>
+
+            <!-- Column 2: Processes -->
+            <div class="flex lg:flex-col justify-around w-full lg:w-auto lg:space-y-8">
+                <!-- Attribute Process -->
+                <div class="w-full max-w-xs text-center mb-8 lg:mb-0">
+                    <div class="bg-blue-50 border-4 border-blue-400 rounded-lg p-4 shadow-lg h-full flex flex-col justify-center">
+                        <h3 class="font-semibold text-lg text-blue-800">Attribute Comparison</h3>
+                        <p class="text-sm text-blue-700 mb-2">Calculated from product features</p>
+                        <p class="font-extrabold text-2xl text-blue-800 mt-2">Score: 0.9911</p>
+                    </div>
+                </div>
+                <!-- Behaviour Process -->
+                <div class="w-full max-w-xs text-center">
+                    <div class="bg-green-50 border-4 border-green-400 rounded-lg p-4 shadow-lg h-full flex flex-col justify-center">
+                        <h3 class="font-semibold text-lg text-green-800">Behavior Analysis</h3>
+                        <p class="text-sm text-green-700 mb-2">Calculated from user interactions</p>
+                        <p class="font-extrabold text-2xl text-green-800 mt-2">Score: 0.7768</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Merge Connector -->
+            <div class="merge-connector-h hidden lg:block">
+                <div class="merge-line-h line-in-top"></div>
+                <div class="merge-line-h line-vertical"></div>
+                <div class="merge-line-h line-in-bottom"></div>
+                <div class="merge-line-h line-out"></div>
+            </div>
+            <div class="flow-connector w-16 h-16 arrow-down block lg:hidden"></div>
+
+            <!-- Column 3: Final Combination -->
+            <div class="w-full lg:w-auto">
+                 <h2 class="text-lg font-bold text-amber-700 mb-2 text-center">3. Final Score Combination</h2>
+                <div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-4">
+                     <!-- Final Process -->
+                    <div class="w-full max-w-xs text-center mb-8 lg:mb-0">
+                        <div class="bg-amber-50 border-2 border-amber-200 rounded-lg p-4 shadow-md h-full flex flex-col justify-center">
+                            <div class="flex items-center justify-center mb-2">
+                                <svg class="w-6 h-6 text-amber-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                                <h3 class="font-semibold text-lg text-amber-800">Process</h3>
+                            </div>
+                            <p class="text-sm text-amber-700">Weighted Calculation</p>
+                            <p class="text-xs text-gray-500 mt-1">(Attribute Score + Transaction Score)</p>
+                        </div>
+                    </div>
+
+                    <!-- Arrow 2 -->
+                    <div class="flow-connector w-16 h-16 arrow-right hidden lg:block"></div>
+                    <div class="flow-connector w-16 h-16 arrow-down block lg:hidden"></div>
+
+                    <!-- Final Output -->
+                    <div class="w-full max-w-xs text-center">
+                        <div class="bg-amber-100 border-4 border-amber-500 rounded-lg py-6 px-8 shadow-xl transform hover:scale-105 transition-transform duration-300">
+                             <h3 class="font-bold text-lg text-amber-800">Final Result</h3>
+                            <p class="font-extrabold text-3xl text-amber-900 tracking-wide">0.9054</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
