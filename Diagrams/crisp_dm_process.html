@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP-DM Process - Product Substitution System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px 10px;
+            line-height: 1.4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            aspect-ratio: 16/9;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 25px 30px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1em;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        
+        .pipeline {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+        
+        .stage {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 60%;
+        }
+        
+        .stage-content {
+            background: white;
+            border-radius: 15px;
+            padding: 18px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .stage-content:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stage-1 .stage-content { 
+            border-top-color: #ff6b6b; 
+            background: linear-gradient(135deg, #fff5f5 0%, #ffebee 100%);
+        }
+        .stage-2 .stage-content { 
+            border-top-color: #4ecdc4; 
+            background: linear-gradient(135deg, #f0fffe 0%, #e0f2f1 100%);
+        }
+        .stage-3 .stage-content { 
+            border-top-color: #ffe66d; 
+            background: linear-gradient(135deg, #fffdf0 0%, #fff8e1 100%);
+        }
+        .stage-4 .stage-content { 
+            border-top-color: #95e1d3; 
+            background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e8 100%);
+        }
+        .stage-5 .stage-content { 
+            border-top-color: #a8e6cf; 
+            background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e8 100%);
+        }
+        .stage-6 .stage-content { 
+            border-top-color: #ffd3a5; 
+            background: linear-gradient(135deg, #fff8f0 0%, #fff2e6 100%);
+        }
+        
+        .stage-header {
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 6px;
+        }
+        
+        .stage-1 .stage-header { color: #dc2626; }
+        .stage-2 .stage-header { color: #0891b2; }
+        .stage-3 .stage-header { color: #d97706; }
+        .stage-4 .stage-header { color: #059669; }
+        .stage-5 .stage-header { color: #059669; }
+        .stage-6 .stage-header { color: #ea580c; }
+        
+        .stage-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1em;
+            color: white;
+            flex-shrink: 0;
+            margin-bottom: 4px;
+        }
+        
+        .stage-1 .stage-icon { background: #dc2626; }
+        .stage-2 .stage-icon { background: #0891b2; }
+        .stage-3 .stage-icon { background: #d97706; }
+        .stage-4 .stage-icon { background: #059669; }
+        .stage-5 .stage-icon { background: #059669; }
+        .stage-6 .stage-icon { background: #ea580c; }
+        
+        .stage-description {
+            color: #4a5568;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+            font-weight: 400;
+            text-align: center;
+            flex: 1;
+        }
+        
+        .key-points {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: auto;
+        }
+        
+        .key-point {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 0.7em;
+            font-weight: 500;
+            color: #374151;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .stage-1 .key-point { 
+            background: rgba(220, 38, 38, 0.1); 
+            color: #991b1b; 
+            border-color: rgba(220, 38, 38, 0.2);
+        }
+        .stage-2 .key-point { 
+            background: rgba(8, 145, 178, 0.1); 
+            color: #0c4a6e; 
+            border-color: rgba(8, 145, 178, 0.2);
+        }
+        .stage-3 .key-point { 
+            background: rgba(217, 119, 6, 0.1); 
+            color: #92400e; 
+            border-color: rgba(217, 119, 6, 0.2);
+        }
+        .stage-4 .key-point { 
+            background: rgba(5, 150, 105, 0.1); 
+            color: #064e3b; 
+            border-color: rgba(5, 150, 105, 0.2);
+        }
+        .stage-5 .key-point { 
+            background: rgba(5, 150, 105, 0.1); 
+            color: #064e3b; 
+            border-color: rgba(5, 150, 105, 0.2);
+        }
+        .stage-6 .key-point { 
+            background: rgba(234, 88, 12, 0.1); 
+            color: #9a3412; 
+            border-color: rgba(234, 88, 12, 0.2);
+        }
+        
+        .stage + .stage::before {
+            content: "→";
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3em;
+            color: #9ca3af;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        .connector-line {
+            position: absolute;
+            right: -3px;
+            top: 50%;
+            width: 6px;
+            height: 30px;
+            background: linear-gradient(to bottom, transparent 0%, #e5e7eb  20%, #e5e7eb 80%, transparent 100%);
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        
+        @media (max-width: 1200px) {
+            .container {
+                padding: 20px 15px;
+                max-width: 1000px;
+                aspect-ratio: 4/3;
+            }
+            
+            .pipeline {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .stage + .stage::before {
+                content: "↓";
+                left: 50%;
+                top: -12px;
+                transform: translateX(-50%);
+            }
+            
+            .title {
+                font-size: 1.5em;
+            }
+            
+            .subtitle {
+                font-size: 0.9em;
+            }
+            
+            .stage-content {
+                padding: 15px;
+            }
+            
+            .key-points {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .key-point {
+                flex: 0 1 auto;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">CRISP-DM Process</h1>
+        <div class="subtitle">Cross-Industry Standard Process for Data Mining - Product Substitution System</div>
+        
+        <div class="pipeline">
+            <!-- Stage 1: Business Understanding -->
+            <div class="stage stage-1">
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <div class="stage-icon">1</div>
+                        <div>Business Understanding</div>
+                    </div>
+                    <div class="stage-description">
+                        Discussed the problem statement with the team. Identified the urgency of building a substitution dashboard to support decision-making for Service Advisors.
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">Problem Statement</div>
+                        <div class="key-point">Team Discussion</div>
+                        <div class="key-point">Dashboard Urgency</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stage 2: Data Understanding -->
+            <div class="stage stage-2">
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <div class="stage-icon">2</div>
+                        <div>Data Understanding</div>
+                    </div>
+                    <div class="stage-description">
+                        Collected and explored transaction, stock, and product data. Validated initial hypotheses about substitution patterns in transactions.
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">Data Collection</div>
+                        <div class="key-point">Pattern Analysis</div>
+                        <div class="key-point">Hypothesis Validation</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stage 3: Data Preparation -->
+            <div class="stage stage-3">
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <div class="stage-icon">3</div>
+                        <div>Data Preparation</div>
+                    </div>
+                    <div class="stage-description">
+                        Cleaned and standardized product IDs across stores. Integrated transaction data with product attributes and stock information.
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">Data Cleaning</div>
+                        <div class="key-point">ID Standardization</div>
+                        <div class="key-point">Data Integration</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stage 4: Modeling -->
+            <div class="stage stage-4">
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <div class="stage-icon">4</div>
+                        <div>Modeling</div>
+                    </div>
+                    <div class="stage-description">
+                        Applied statistical methods to calculate substitution scores between product pairs. Generated substitution matrices for each store.
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">Statistical Methods</div>
+                        <div class="key-point">Score Calculation</div>
+                        <div class="key-point">Substitution Matrices</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stage 5: Evaluation -->
+            <div class="stage stage-5">
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <div class="stage-icon">5</div>
+                        <div>Evaluation</div>
+                    </div>
+                    <div class="stage-description">
+                        Tested thresholds from 0.1 to 0.9 to classify substitution pairs. Selected the optimal cutoff based on precision, recall, and business relevance.
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">Threshold Testing</div>
+                        <div class="key-point">Precision & Recall</div>
+                        <div class="key-point">Optimal Cutoff</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stage 6: Deployment -->
+            <div class="stage stage-6">
+                <div class="stage-content">
+                    <div class="stage-header">
+                        <div class="stage-icon">6</div>
+                        <div>Deployment</div>
+                    </div>
+                    <div class="stage-description">
+                        Developed a Power BI dashboard displaying substitution pairs, coverage metrics, and supporting KPIs. Enhanced usability with filters and visualizations.
+                    </div>
+                    <div class="key-points">
+                        <div class="key-point">Power BI Dashboard</div>
+                        <div class="key-point">Coverage Metrics</div>
+                        <div class="key-point">KPI Visualization</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

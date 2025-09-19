@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Ground Truth Creation Process</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px 10px;
+            line-height: 1.4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1em;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        
+        .process-flow {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .step {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .step-content {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .step-content:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .step-1 .step-content { 
+            border-top-color: #3498db; 
+            background: linear-gradient(135deg, #f7fbff 0%, #e3f2fd 100%);
+        }
+        .step-2 .step-content { 
+            border-top-color: #f39c12; 
+            background: linear-gradient(135deg, #fefcf7 0%, #fff8e1 100%);
+        }
+        .step-3 .step-content { 
+            border-top-color: #27ae60; 
+            background: linear-gradient(135deg, #f8fffe 0%, #e8f5e8 100%);
+        }
+        .step-4 .step-content { 
+            border-top-color: #e74c3c; 
+            background: linear-gradient(135deg, #fff7f7 0%, #ffebee 100%);
+        }
+        
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: white;
+            margin: 0 auto 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-1 .step-icon { background: #3498db; }
+        .step-2 .step-icon { background: #f39c12; }
+        .step-3 .step-icon { background: #27ae60; }
+        .step-4 .step-icon { background: #e74c3c; }
+        
+        .step-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        
+        .step-1 .step-title { color: #2980b9; }
+        .step-2 .step-title { color: #d68910; }
+        .step-3 .step-title { color: #229954; }
+        .step-4 .step-title { color: #c0392b; }
+        
+        .step-description {
+            color: #5d6d7e;
+            line-height: 1.5;
+            font-size: 0.9em;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        
+        .check-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin: 4px 0;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-1 .check-box { 
+            background: rgba(52, 152, 219, 0.1); 
+            color: #1f4e79; 
+            border-color: rgba(52, 152, 219, 0.2);
+        }
+        
+        .outcome-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 0.85em;
+            font-weight: 700;
+            margin: 6px 0;
+            border: 2px solid;
+        }
+        
+        .substitutable {
+            background: rgba(39, 174, 96, 0.15);
+            color: #196f3d;
+            border-color: rgba(39, 174, 96, 0.3);
+        }
+        
+        .not-substitutable {
+            background: rgba(231, 76, 60, 0.15);
+            color: #922b21;
+            border-color: rgba(231, 76, 60, 0.3);
+        }
+        
+        .step + .step::before {
+            content: "→";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.8em;
+            color: #bdc3c7;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        .decision-diamond {
+            width: 60px;
+            height: 60px;
+            background: #f39c12;
+            transform: rotate(45deg);
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .decision-diamond .icon-text {
+            transform: rotate(-45deg);
+            font-weight: bold;
+            font-size: 1.2em;
+            color: white;
+        }
+        
+        @media (max-width: 1000px) {
+            .container {
+                padding: 25px 20px;
+                max-width: 900px;
+                aspect-ratio: 4/3;
+            }
+            
+            .process-flow {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .step + .step::before {
+                content: "↓";
+                left: 50%;
+                top: -15px;
+                transform: translateX(-50%);
+            }
+            
+            .title {
+                font-size: 1.5em;
+            }
+            
+            .subtitle {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pseudo Ground Truth Creation Process</h1>
+        <div class="subtitle">Determining product pair substitutability based on category and vehicle compatibility</div>
+        
+        <div class="process-flow">
+            <!-- Step 1: Product Pair Input -->
+            <div class="step step-1">
+                <div class="step-content">
+                    <div class="step-icon">1</div>
+                    <div class="step-title">Product Pair Input</div>
+                    <div class="step-description">
+                        Start with a pair of products that need to be evaluated for substitutability
+                    </div>
+                    <div class="check-box">Product A & Product B</div>
+                </div>
+            </div>
+            
+            <!-- Step 2: Category & Vehicle Check -->
+            <div class="step step-2">
+                <div class="step-content">
+                    <div class="decision-diamond">
+                        <div class="icon-text">?</div>
+                    </div>
+                    <div class="step-title">Compatibility Check</div>
+                    <div class="step-description">
+                        Verify if products share the same category AND have at least one common compatible vehicle
+                    </div>
+                    <div class="check-box">Same Category?</div>
+                    <div class="check-box">Common Vehicle?</div>
+                </div>
+            </div>
+            
+            <!-- Step 3: Positive Classification -->
+            <div class="step step-3">
+                <div class="step-content">
+                    <div class="step-icon">✓</div>
+                    <div class="step-title">Criteria Fulfilled</div>
+                    <div class="step-description">
+                        Both conditions are met: same category and common compatible vehicle
+                    </div>
+                    <div class="outcome-box substitutable">
+                        SUBSTITUTABLE
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 4: Negative Classification -->
+            <div class="step step-4">
+                <div class="step-content">
+                    <div class="step-icon">✗</div>
+                    <div class="step-title">Criteria Not Met</div>
+                    <div class="step-description">
+                        Either different category OR no common compatible vehicle
+                    </div>
+                    <div class="outcome-box not-substitutable">
+                        NOT SUBSTITUTABLE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

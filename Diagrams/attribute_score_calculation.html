@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Score Calculation Process</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: auto;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .flow-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            min-width: 1200px;
+            gap: 20px;
+        }
+        
+        .input-section {
+            background: #f5f5f5;
+            border: 3px solid #9e9e9e;
+            border-radius: 12px;
+            padding: 25px;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .input-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #616161;
+            margin-bottom: 20px;
+        }
+        
+        .product-box {
+            background: #fff;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .product-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+        
+        .attribute {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin: 3px 0;
+        }
+        
+        .arrow {
+            font-size: 2em;
+            color: #6c757d;
+            margin: 0 15px;
+        }
+        
+        .calculation-section {
+            background: #eff6ff;
+            border: 4px solid #60a5fa;
+            border-radius: 12px;
+            padding: 25px;
+            flex: 1;
+            min-width: 600px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .calculation-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .attribute-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .attribute-name {
+            font-weight: 600;
+            color: #495057;
+            flex: 1;
+        }
+        
+        .weight {
+            background: #4caf50;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 0 15px;
+        }
+        
+        .comparison {
+            color: #6c757d;
+            font-style: italic;
+            flex: 1;
+            text-align: right;
+        }
+        
+        .result-section {
+            background: #fef3c7;
+            border: 4px solid #f59e0b;
+            border-radius: 12px;
+            padding: 25px;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .result-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 20px;
+        }
+        
+        .score-box {
+            background: #fff;
+            border: 2px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        
+        .score-value {
+            font-size: 2em;
+            font-weight: 800;
+            color: #78350f;
+            margin: 10px 0;
+            letter-spacing: 0.05em;
+        }
+        
+        .score-label {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .formula {
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #e65100;
+        }
+        
+        .highlight {
+            background: #ffeb3b;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Attribute Score Calculation Process</h1>
+        
+        <div class="flow-container">
+            <!-- Input Products Section -->
+            <div class="input-section">
+                <div class="input-title">Input Products</div>
+                
+                <div class="product-box">
+                    <div class="product-title">Product A</div>
+                    <div class="attribute">Sample Product Attributes</div>
+                </div>
+                
+                <div class="product-box">
+                    <div class="product-title">Product B</div>
+                    <div class="attribute">Sample Product Attributes</div>
+                </div>
+            </div>
+            
+            <!-- Arrow -->
+            <div class="arrow">→</div>
+            
+            <!-- Calculation Section -->
+            <div class="calculation-section">
+                <div class="calculation-title">Attribute Similarity Check</div>
+                
+                <div class="attribute-row" style="background: #f5f5f5; border-left: 4px solid #9e9e9e;">
+                    <div class="attribute-name">Category Match</div>
+                    <div class="weight" style="background: #9e9e9e;">50%</div>
+                    <div class="comparison" style="color: #616161; font-weight: 600;">Product category</div>
+                </div>
+                
+                <div class="attribute-row" style="background: #f5f5f5; border-left: 4px solid #9e9e9e;">
+                    <div class="attribute-name">Grade Match</div>
+                    <div class="weight" style="background: #9e9e9e;">5%</div>
+                    <div class="comparison" style="color: #616161; font-weight: 600;">Quality grade</div>
+                </div>
+                
+                <div class="attribute-row" style="background: #f5f5f5; border-left: 4px solid #9e9e9e;">
+                    <div class="attribute-name">Material Match</div>
+                    <div class="weight" style="background: #9e9e9e;">5%</div>
+                    <div class="comparison" style="color: #616161; font-weight: 600;">Material type</div>
+                </div>
+                
+                <div class="attribute-row" style="background: #f5f5f5; border-left: 4px solid #9e9e9e;">
+                    <div class="attribute-name">Vehicle Type Match</div>
+                    <div class="weight" style="background: #9e9e9e;">15%</div>
+                    <div class="comparison" style="color: #616161; font-weight: 600;">Vehicle type</div>
+                </div>
+                
+                <div class="attribute-row" style="background: #f5f5f5; border-left: 4px solid #9e9e9e;">
+                    <div class="attribute-name">Compatibility Match</div>
+                    <div class="weight" style="background: #9e9e9e;">15%</div>
+                    <div class="comparison" style="color: #616161; font-weight: 600;">Vehicle compatibility</div>
+                </div>
+                
+                <div class="attribute-row" style="background: #f5f5f5; border-left: 4px solid #9e9e9e;">
+                    <div class="attribute-name">Price Similarity</div>
+                    <div class="weight" style="background: #9e9e9e;">10%</div>
+                    <div class="comparison" style="color: #616161; font-weight: 600;">Price difference normalized</div>
+                </div>
+                    
+            </div>
+            
+            <!-- Arrow -->
+            <div class="arrow">→</div>
+            
+            <!-- Result Section -->
+            <div class="result-section">
+                <div class="result-title">Attribute Score</div>
+                <div class="score-box">
+                    <div class="score-value"> XX% </div>
+                    <div class="score-label">How similar are the attributes of the two products?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

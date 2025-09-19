@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Substitution Example</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            margin: 0;
+            padding: 20px 10px;
+            line-height: 1.4;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 25px 30px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+        
+        .products-section {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .products-content {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #dc2626;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+        }
+        
+        .products-content:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .products-header {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            color: #dc2626;
+        }
+        
+        .products-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            flex-shrink: 0;
+            margin-bottom: 5px;
+            background: #dc2626;
+        }
+        
+        .products-description {
+            color: #4a5568;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-size: 0.85em;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .product-comparison {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .product-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 16px 20px;
+            border-radius: 16px;
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #374151;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: rgba(220, 38, 38, 0.1);
+            color: #991b1b;
+            border-color: rgba(220, 38, 38, 0.2);
+        }
+        
+        .vs-divider {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #dc2626;
+        }
+        
+        .process-section {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .process-content {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #dc2626;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+        }
+        
+        .process-content:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .process-header {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            color: #dc2626;
+        }
+        
+        .process-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            flex-shrink: 0;
+            margin-bottom: 5px;
+            background: #dc2626;
+        }
+        
+        .process-description {
+            color: #4a5568;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-size: 0.85em;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .steps-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .step-item {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 6px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+            color: #374151;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: rgba(220, 38, 38, 0.1);
+            color: #991b1b;
+            border-color: rgba(220, 38, 38, 0.2);
+        }
+        
+        .scores-section {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .scores-content {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #ffe66d;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #fffdf0 0%, #fff8e1 100%);
+        }
+        
+        .scores-content:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .scores-header {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            color: #ffe66d;
+        }
+        
+        .scores-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            flex-shrink: 0;
+            margin-bottom: 5px;
+            background: #d97706;
+        }
+        
+        .scores-description {
+            color: #4a5568;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-size: 0.85em;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .scores-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .score-item {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 6px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+            color: #374151;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: rgba(217, 119, 6, 0.1);
+            color: #92400e;
+            border-color: rgba(217, 119, 6, 0.2);
+        }
+        
+        .result-section {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .result-content {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #dc2626;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+        }
+        
+        .result-content:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .result-header {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            color: #dc2626;
+        }
+        
+        .result-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            flex-shrink: 0;
+            margin-bottom: 5px;
+            background: #dc2626;
+        }
+        
+        .result-description {
+            color: #4a5568;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-size: 0.85em;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .outcome-badges {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .outcome-badge {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 0.75em;
+            font-weight: 600;
+            color: #374151;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .outcome-badge.highlight {
+            background: rgba(220, 38, 38, 0.1);
+            color: #991b1b;
+            border-color: rgba(220, 38, 38, 0.2);
+        }
+        
+        .section + .section::before {
+            content: "→";
+            position: absolute;
+            left: -18px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: #9ca3af;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        @media (max-width: 900px) {
+            .container {
+                padding: 20px 15px;
+                max-width: 800px;
+                aspect-ratio: 4/3;
+            }
+            
+            .main-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .section + .section::before {
+                content: "↓";
+                left: 50%;
+                top: -15px;
+                transform: translateX(-50%);
+            }
+            
+            .title {
+                font-size: 1.3em;
+            }
+            
+            .subtitle {
+                font-size: 0.8em;
+            }
+            
+            .products-content, .process-content, .scores-content, .result-content {
+                padding: 18px;
+            }
+            
+            .steps-flow, .scores-grid, .outcome-badges {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .step-item, .score-item, .outcome-badge {
+                flex: 0 1 auto;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Product Substitution Analysis</h1>
+        <div class="subtitle">SpeedLine Oil 201 vs DriveWell Oil 694</div>
+        
+        <div class="main-content">
+            <!-- Products Section -->
+            <div class="products-section section">
+                <div class="products-content">
+                    <div class="products-header">
+                        <div class="products-icon">A</div>
+                        <div>Product Comparison</div>
+                    </div>
+                    <div class="products-description">
+                        Comparing two oil products for MPV vehicles
+                    </div>
+                    <div class="product-comparison">
+                        <div class="product-card">P0001<br>SpeedLine Oil 201<br>Premium<br>Mineral<br>$308.63</div>
+                        <div class="vs-divider">VS</div>
+                        <div class="product-card">P0069<br>DriveWell Oil 694<br>Economy<br>Mineral <br>$302.03</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Process Section -->
+            <div class="process-section section">
+                <div class="process-content">
+                    <div class="process-header">
+                        <div class="process-icon">1</div>
+                        <div>Ground Truth</div>
+                    </div>
+                    <div class="process-description">
+                        Check basic substitutability criteria
+                    </div>
+                    <div class="steps-flow">
+                        <div class="step-item">Same Category: Oil</div>
+                        <div class="step-item">Same Vehicle Type: MPV</div>
+                        <div class="step-item">Shared Compatibility: None</div>
+                        <div class="step-item">❌ NOT SUBSTITUTABLE</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scores Section -->
+            <div class="scores-section section">
+                <div class="scores-content">
+                    <div class="scores-header">
+                        <div class="scores-icon">2</div>
+                        <div>Score Calculation</div>
+                    </div>
+                    <div class="scores-description">
+                        Calculate attribute and transaction scores
+                    </div>
+                    <div class="scores-grid">
+                        <div class="score-item">Attribute Score: 79.9%</div>
+                        <div class="score-item">Transaction Score: 73.8%</div>
+                        <div class="score-item">Combined: 77.4%</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Result Section -->
+            <div class="result-section section">
+                <div class="result-content">
+                    <div class="result-header">
+                        <div class="result-icon">&#10060;</div>
+                        <div>Final Decision</div>
+                    </div>
+                    <div class="result-description">
+                        Below threshold (79%) – <strong>Not recommended as substitute</strong>
+                    </div>
+                    <div class="outcome-badges">
+                        <div class="outcome-badge highlight">Score: 77.4%</div>
+                        <div class="outcome-badge highlight">NOT RECOMMENDED</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

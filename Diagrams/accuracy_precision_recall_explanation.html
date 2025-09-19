@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy, Precision & Recall Explanation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: auto;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        
+        .flow-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            min-width: 1200px;
+            gap: 30px;
+        }
+        
+        .confusion-section {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 250px;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        
+        .confusion-matrix {
+            border-collapse: collapse;
+            border: 2px solid #2c3e50;
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 0 auto;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .confusion-matrix th,
+        .confusion-matrix td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #2c3e50;
+            min-width: 60px;
+        }
+        
+        .confusion-matrix th {
+            background: #34495e;
+            color: white;
+            font-size: 0.8em;
+        }
+        
+        .tp {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .tn {
+            background: #2ecc71;
+            color: white;
+        }
+        
+        .fp {
+            background: #e67e22;
+            color: white;
+        }
+        
+        .fn {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .metrics-section {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            min-width: 600px;
+        }
+        
+        .metrics-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #1976d2;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .metric-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid;
+        }
+        
+        .metric-card.accuracy {
+            border-left-color: #3498db;
+        }
+        
+        .metric-card.precision {
+            border-left-color: #e67e22;
+        }
+        
+        .metric-card.recall {
+            border-left-color: #e74c3c;
+        }
+        
+        .metric-name {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .metric-formula {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 8px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #495057;
+            text-align: center;
+        }
+        
+        .metric-calculation {
+            background: #e8f5e9;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 8px 0;
+            font-size: 1em;
+            color: #2e7d32;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .metric-explanation {
+            color: #6c757d;
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin-top: 8px;
+        }
+        
+        .example-section {
+            background: #f3e5f5;
+            border: 2px solid #9c27b0;
+            border-radius: 10px;
+            padding: 20px;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .example-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #7b1fa2;
+            margin-bottom: 15px;
+        }
+        
+        .total-pairs {
+            background: #fff;
+            border: 1px solid #e1bee7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 8px 0;
+        }
+        
+        .total-value {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #7b1fa2;
+            margin: 5px 0;
+        }
+        
+        .total-label {
+            color: #6c757d;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Accuracy, Precision & Recall Explanation</h1>
+        <p style="text-align: center; color: #6c757d; font-size: 1.2em; margin-bottom: 30px;">Product Substitution Prediction Performance Metrics</p>
+        
+        <div class="flow-container">
+            <!-- Confusion Matrix Section -->
+            <div class="confusion-section">
+                <div class="section-title">Confusion Matrix</div>
+                <table class="confusion-matrix">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="2">Predicted</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>Substitute</th>
+                            <th>Not Substitute</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Actual</strong><br>Substitute</td>
+                            <td class="tp">TP = 3</td>
+                            <td class="fn">FN = 2</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Actual</strong><br>Not Substitute</td>
+                            <td class="fp">FP = 2</td>
+                            <td class="tn">TN = 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            
+            <!-- Metrics Explanation Section -->
+            <div class="metrics-section">
+                <div class="metrics-title">Performance Metrics</div>
+                
+                <div class="metric-card accuracy">
+                    <div class="metric-name">Accuracy</div>
+                    <div class="metric-formula">
+                        Accuracy = (TP + TN) / (TP + TN + FP + FN)
+                    </div>
+                    <div class="metric-calculation">
+                        Accuracy = (3 + 3) / (3 + 3 + 2 + 2) = 6/10 = 0.6 = 60%
+                    </div>
+                    <div class="metric-explanation">
+                        <strong>What it measures:</strong> Overall correctness. 6 out of 10 predictions were correct = 60%
+                    </div>
+                </div>
+                
+                <div class="metric-card precision">
+                    <div class="metric-name">Precision</div>
+                    <div class="metric-formula">
+                        Precision = TP / (TP + FP)
+                    </div>
+                    <div class="metric-calculation">
+                        Precision = 3 / (3 + 2) = 3/5 = 0.6 = 60%
+                    </div>
+                    <div class="metric-explanation">
+                        <strong>What it measures:</strong> When predicting substitutable, how often is it correct? 3 out of 5 predictions were right = 60%
+                    </div>
+                </div>
+                
+                <div class="metric-card recall">
+                    <div class="metric-name">Recall</div>
+                    <div class="metric-formula">
+                        Recall = TP / (TP + FN)
+                    </div>
+                    <div class="metric-calculation">
+                        Recall = 3 / (3 + 2) = 3/5 = 0.6 = 60%
+                    </div>
+                    <div class="metric-explanation">
+                        <strong>What it measures:</strong> Of all substitutable pairs, how many did we find? Found 3 out of 5 = 60%
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Example Summary Section -->
+            <div class="example-section">
+                <div class="example-title">Example Summary</div>
+                
+                <div class="total-pairs">
+                    <div class="total-value">10</div>
+                    <div class="total-label">Total Product Pairs</div>
+                </div>
+                
+                <div class="total-pairs">
+                    <div class="total-value">5</div>
+                    <div class="total-label">Actually Substitutable</div>
+                </div>
+                
+                <div class="total-pairs">
+                    <div class="total-value">5</div>
+                    <div class="total-label">Actually Not Substitutable</div>
+                </div>
+                
+                <div class="total-pairs">
+                    <div class="total-value">5</div>
+                    <div class="total-label">Predicted Substitutable</div>
+                </div>
+                
+                <div class="total-pairs">
+                    <div class="total-value">5</div>
+                    <div class="total-label">Predicted Not Substitutable</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

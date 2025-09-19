@@ -287,15 +287,15 @@
                 <div class="stage-content">
                     <div class="stage-header">
                         <div class="stage-icon">1</div>
-                        <div>Define Similarity Rules</div>
+                        <div>Define Pseudo Ground Truth</div>
                     </div>
                     <div class="stage-description">
-                        Establish clear business rules for when products can substitute each other
+                        Assume products that are in the same category, vehicle fit definitely substitutable
                     </div>
                     <div class="key-points">
                         <div class="key-point">Same Category</div>
                         <div class="key-point">Same Vehicle Fit</div>
-                        <div class="key-point">Ground Truth</div>
+                        <div class="key-point">Substitutable</div>
                     </div>
                 </div>
             </div>
@@ -305,10 +305,10 @@
                 <div class="stage-content">
                     <div class="stage-header">
                         <div class="stage-icon">2</div>
-                        <div>Smart Scoring System</div>
+                        <div>Calculate Substitutability Scores</div>
                     </div>
                     <div class="stage-description">
-                        Analyze products using features and customer behavior patterns
+                        Calculate substitutability scores using product features and purchase patterns
                     </div>
                     <div class="key-points">
                         <div class="key-point">Product Features</div>
@@ -326,12 +326,12 @@
                         <div>Training &amp; Optimization</div>
                     </div>
                     <div class="stage-description">
-                        Test different settings on 10 stores to find optimal thresholds
+                        Train different thresholds to find optimal substitutability scores with respect to pseudo ground truth
                     </div>
                     <div class="key-points">
-                        <div class="key-point">Test Thresholds</div>
-                        <div class="key-point">Measure Quality</div>
-                        <div class="key-point">Select Best</div>
+                        <div class="key-point">Categorize Yes/No</div>
+                        <div class="key-point">Measure Metrics</div>
+                        <div class="key-point">Select Best Threshold</div>
                     </div>
                 </div>
             </div>
@@ -341,10 +341,10 @@
                 <div class="stage-content">
                     <div class="stage-header">
                         <div class="stage-icon">4</div>
-                        <div>Real-World Testing</div>
+                        <div>Testing</div>
                     </div>
                     <div class="stage-description">
-                        Validate system performance on 5 new stores in real conditions
+                        Validate system performance on 5 new stores using best threshold
                     </div>
                     <div class="outcome-badges">
                         <div class="outcome-badge highlight">Accuracy</div>
